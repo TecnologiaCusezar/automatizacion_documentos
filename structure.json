@@ -1,0 +1,126 @@
+{
+    "proyecto": {
+        "macroproyecto": "",
+        "equipo_comercial": [
+            {
+                "nombre": "",
+                "cargo": ""
+            }
+        ],
+        "tel_fono": "",
+        "email": "",
+        "unidad": {
+            "id": "",
+            "torre": "",
+            "unidad": "",
+            "area": {
+                "construidos": 0,
+                "privados": 0,
+                "balc_n": 0,
+                "terraza": 0,
+                "patio": 0
+            },
+            "financiaci_n": {
+                "valor": 0,
+                "plan_de_pagos": [
+                    {
+                        "concepto": "",
+                        "fecha": "",
+                        "valor": 0,
+                        "periodo": "",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    }
+                ],
+                "plazo": 0,
+                "descuento_comercial": 0,
+                "descuento_financiero": 0,
+                "costo_financiero": 0
+            },
+            "mes_estimado_entrega": "",
+            "torre_hace_parte_cerramiento": true,
+            "exterior": false,
+            "interior": false,
+            "medianero": false,
+            "esquinero": false,
+            "observaciones": ""
+        },
+        "coeficiente_administraci_n": 0
+    },
+    "compradores": [
+        {
+            "nombre": "",
+            "primer_apellido": "",
+            "segundo_apellido": "",
+            "tipo_documento": "",
+            "n_mero_documento": "",
+            "fecha_expedici_n": "",
+            "lugar_expedici_n": "",
+            "fecha_nacimiento": "",
+            "lugar_nacimiento": "",
+            "nacionalidad": "",
+            "estado_civil": "",
+            "sexo": "",
+            "c_nyugue": {
+                "nombres": "",
+                "apellidos": "",
+                "n_mero_documento": "",
+                "a_os_de_convivencia": "",
+                "fecha_de_liquidaci_n_de_sociedad": "",
+                "n_mero_de_notar_a_o_juzgado": "",
+                "n_mero_de_escritura": ""
+            },
+            "correo_electr_nico": "",
+            "n_mero_de_celular": "",
+            "n_mero_de_tel_fono": "",
+            "direcci_n_de_residencia": "",
+            "ciudad_de_residencia": "",
+            "pa_s_de_residencia": "",
+            "informacion_financiera": {
+                "ingresos": [
+                    {
+                        "actividad": "",
+                        "c_digo_ciiu": "",
+                        "ocupaci_n": "",
+                        "cargo": "",
+                        "total": 0,
+                        "empresa": {
+                            "nombre": "",
+                            "tel_fono": "",
+                            "direcci_n": ""
+                        },
+                        "_p_que_tipo_de_producto_y_o_servicio_comercializa": "",
+                        "cesantias": "",
+                        "entidad": ""
+                    }
+                ],
+                "cifin": "",
+                "aporte_por_primas": 0,
+                "ahorros": 0,
+                "gastos_personales": 0,
+                "aportes": "",
+                "subsidio": {
+                    "entidad": "",
+                    "valor": 0
+                },
+                "activo": 0,
+                "pasivo": 0
+            },
+            "informacion_pep": {
+                "_p_por_su_actividad_o_cargo_maneja_recursos_p_blicos": false,
+                "_p_por_su_actividad_u_oficio_goza_usted_de_reconocimiento_p_blico_general": false,
+                "_p_por_su_actividad_o_cargo_ejerce_alg_n_grado_de_poder_p_blico": "",
+                "_p_existe_alg_n_v_nculo_entre_usted_y_una_persona_considerada_p_blicamente_expuesta": "",
+                "_p_es_usted_sujeto_de_obligaciones_tributarias_en_otros_pa_ses_o_grupo_de_pa_ses": "",
+                "nombre_gerente_comercial": "",
+                "n_mero_documento_gerente_comercial": "",
+                "nombre_oficial_cumplimiento": "",
+                "n_mero_documento_oficial_cumplimiento": ""
+            },
+            "origen_de_fondos": "",
+            "acepta_campa_as_de_promoci_n_de_proyectos": true,
+            "acepta_estudios_estad_sticos_del_cliente": true
+        }
+    ]
+}
