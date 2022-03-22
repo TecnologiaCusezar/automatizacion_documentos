@@ -21,7 +21,7 @@ function sendRequest(method = "POST", link, json) {
 //sendRequest("POST","https://prod-22.westus.logic.azure.com:443/workflows/623a821225cf4d2b9e984e8d2f7ea5b8/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=1TkPdu1nbcf3_Rwv0gsCZ9cpdTs94KNKwZp3GFVUjdc","salesforce_requester");
 
 //Prueba Autorización centrales
-sendRequest("POST","https://prod-91.westus.logic.azure.com:443/workflows/33f4fcf6b6c24d0ca393aab34b89cf5c/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Psa2H_3VV52p_3N5CkMWtDacg-THi7HjzOVSPkYfzd8","autorizacion_centrales");
+//sendRequest("POST","https://prod-91.westus.logic.azure.com:443/workflows/33f4fcf6b6c24d0ca393aab34b89cf5c/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Psa2H_3VV52p_3N5CkMWtDacg-THi7HjzOVSPkYfzd8","autorizacion_centrales");
 
 //Prueba Indagación estado civil
 //sendRequest("POST","https://prod-150.westus.logic.azure.com:443/workflows/d8f2433c8291427991fac9cc2238af73/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=dOlgsLAegH8rIIpXDJUu_RMhV0ePwzF_mImkR61U1ws","autorizacion_centrales");
@@ -52,4 +52,21 @@ function azureFunc() {
     return JSON.stringify(respuesta);
 }
 
+
 //console.log(azureFunc());
+
+function makePayload(json, properties) {
+    Object.keys(json).forEach(function (key_1) {
+        if (json[key_1] instanceof object) {
+        
+        } else if (json[key_1] instanceof array) {
+        } else {
+            json[key_1] = properties
+        }
+    });
+    return json;
+};
+
+
+
+console.log(JSON.stringify(makePayload(require('./autorizacion_centrales.json'))));
