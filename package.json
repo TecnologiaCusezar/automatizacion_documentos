@@ -1,5 +1,11 @@
 {
   "dependencies": {
+    "blob": "^0.1.0",
+    "fs": "^0.0.1-security",
+    "fs3": "^0.0.1",
     "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "json-schema-generator": "^2.0.6"
   }
 }

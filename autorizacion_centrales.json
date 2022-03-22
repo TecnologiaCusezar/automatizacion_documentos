@@ -1,6 +1,7 @@
 {
     "proyecto": {
         "macroproyecto": "GREGAL",
+        "sociedad_vendedora": "CUSEZA S.A.",
         "equipo_comercial": [
             {
                 "nombre": "Adriana Restrepo",
@@ -528,7 +529,7 @@
                 "pasivo": 0
             },
             "informacion_pep": {
-                "_p_por_su_actividad_o_cargo_maneja_recursos p_blicos": false,
+                "_p_por_su_actividad_o_cargo_maneja_recursos_p_blicos": false,
                 "_p_por_su_actividad_u_oficio_goza_usted_de_reconocimiento_p_blico_general": false,
                 "_p_por_su_actividad_o_cargo_ejerce_alg_n_grado_de_poder_p_blico": "",
                 "_p_existe_alg_n_v_nculo_entre_usted_y_una_persona_considerada_p_blicamente_expuesta": "",

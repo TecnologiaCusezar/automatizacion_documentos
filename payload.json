@@ -4,35 +4,14 @@
         "proyecto": {
             "type": "object",
             "properties": {
-                "macroproyecto": {
-                    "type": [
-                        "integer",
-                        "number",
-                        "boolean",
-                        "string"
-                    ]
-                },
+                "macroproyecto": {},
                 "equipo_comercial": {
                     "type": "array",
                     "items": {
                         "type": "object",
                         "properties": {
-                            "nombre": {
-                                "type": [
-                                    "integer",
-                                    "number",
-                                    "boolean",
-                                    "string"
-                                ]
-                            },
-                            "cargo": {
-                                "type": [
-                                    "integer",
-                                    "number",
-                                    "boolean",
-                                    "string"
-                                ]
-                            }
+                            "nombre": {},
+                            "cargo": {}
                         },
                         "required": [
                             "nombre",
@@ -40,153 +19,41 @@
                         ]
                     }
                 },
-                "tel_fono": {
-                    "type": [
-                        "integer",
-                        "number",
-                        "boolean",
-                        "string"
-                    ]
-                },
+                "tel_fono": {},
                 "unidad": {
                     "type": "object",
                     "properties": {
-                        "id": {
-                            "type": [
-                                "integer",
-                                "number",
-                                "boolean",
-                                "string"
-                            ]
-                        },
-                        "torre": {
-                            "type": [
-                                "integer",
-                                "number",
-                                "boolean",
-                                "string"
-                            ]
-                        },
-                        "unidad": {
-                            "type": [
-                                "integer",
-                                "number",
-                                "boolean",
-                                "string"
-                            ]
-                        },
+                        "id": {},
+                        "torre": {},
+                        "unidad": {},
                         "area": {
                             "type": "object",
                             "properties": {
                                 "construidos": {
                                     "type": "number"
                                 },
-                                "privados": {
-                                    "type": [
-                                        "integer",
-                                        "number",
-                                        "boolean",
-                                        "string"
-                                    ]
-                                },
-                                "balc_n": {
-                                    "type": [
-                                        "integer",
-                                        "number",
-                                        "boolean",
-                                        "string"
-                                    ]
-                                },
-                                "terraza": {
-                                    "type": [
-                                        "integer",
-                                        "number",
-                                        "boolean",
-                                        "string"
-                                    ]
-                                },
-                                "patio": {
-                                    "type": [
-                                        "integer",
-                                        "number",
-                                        "boolean",
-                                        "string"
-                                    ]
-                                }
+                                "privados": {},
+                                "balc_n": {},
+                                "terraza": {},
+                                "patio": {}
                             }
                         },
                         "financiaci_n": {
                             "type": "object",
                             "properties": {
-                                "valor": {
-                                    "type": [
-                                        "integer",
-                                        "number",
-                                        "boolean",
-                                        "string"
-                                    ]
-                                },
+                                "valor": {},
                                 "plan_de_pagos": {
                                     "type": "array",
                                     "items": {
                                         "type": "object",
                                         "properties": {
-                                            "concepto": {
-                                                "type": [
-                                                    "integer",
-                                                    "number",
-                                                    "boolean",
-                                                    "string"
-                                                ]
-                                            },
-                                            "fecha": {
-                                                "type": [
-                                                    "integer",
-                                                    "number",
-                                                    "boolean",
-                                                    "string"
-                                                ]
-                                            },
-                                            "valor": {
-                                                "type": [
-                                                    "integer",
-                                                    "number",
-                                                    "boolean",
-                                                    "string"
-                                                ]
-                                            },
-                                            "periodo": {
-                                                "type": [
-                                                    "integer",
-                                                    "number",
-                                                    "boolean",
-                                                    "string"
-                                                ]
-                                            },
-                                            "entidad": {
-                                                "type": [
-                                                    "integer",
-                                                    "number",
-                                                    "boolean",
-                                                    "string"
-                                                ]
-                                            },
-                                            "amortizaci_n": {
-                                                "type": [
-                                                    "integer",
-                                                    "number",
-                                                    "boolean",
-                                                    "string"
-                                                ]
-                                            },
-                                            "plazo": {
-                                                "type": [
-                                                    "integer",
-                                                    "number",
-                                                    "boolean",
-                                                    "string"
-                                                ]
-                                            }
+                                            "concepto": {},
+                                            "fecha": {},
+                                            "valor": {},
+                                            "periodo": {},
+                                            "entidad": {},
+                                            "amortizaci_n": {},
+                                            "plazo": {}
                                         },
                                         "required": [
                                             "concepto",
@@ -199,154 +66,28 @@
                                         ]
                                     }
                                 },
-                                "plazo": {
-                                    "type": [
-                                        "integer",
-                                        "number",
-                                        "boolean",
-                                        "string"
-                                    ]
-                                },
-                                "descuento_comercial": {
-                                    "type": [
-                                        "integer",
-                                        "number",
-                                        "boolean",
-                                        "string"
-                                    ]
-                                },
-                                "descuento_financiero": {
-                                    "type": [
-                                        "integer",
-                                        "number",
-                                        "boolean",
-                                        "string"
-                                    ]
-                                },
-                                "costo_financiero": {
-                                    "type": [
-                                        "integer",
-                                        "number",
-                                        "boolean",
-                                        "string"
-                                    ]
-                                }
+                                "plazo": {},
+                                "descuento_comercial": {},
+                                "descuento_financiero": {},
+                                "costo_financiero": {}
                             }
                         },
-                        "mes_estimado_entrega": {
-                            "type": [
-                                "integer",
-                                "number",
-                                "boolean",
-                                "string"
-                            ]
-                        },
-                        "torre_hace_parte_cerramiento": {
-                            "type": [
-                                "integer",
-                                "number",
-                                "boolean",
-                                "string"
-                            ]
-                        },
-                        "exterior": {
-                            "type": [
-                                "integer",
-                                "number",
-                                "boolean",
-                                "string"
-                            ]
-                        },
-                        "interior": {
-                            "type": [
-                                "integer",
-                                "number",
-                                "boolean",
-                                "string"
-                            ]
-                        },
-                        "medianero": {
-                            "type": [
-                                "integer",
-                                "number",
-                                "boolean",
-                                "string"
-                            ]
-                        },
-                        "esquinero": {
-                            "type": [
-                                "integer",
-                                "number",
-                                "boolean",
-                                "string"
-                            ]
-                        },
-                        "observaciones": {
-                            "type": [
-                                "integer",
-                                "number",
-                                "boolean",
-                                "string"
-                            ]
-                        }
+                        "mes_estimado_entrega": {},
+                        "torre_hace_parte_cerramiento": {},
+                        "exterior": {},
+                        "interior": {},
+                        "medianero": {},
+                        "esquinero": {},
+                        "observaciones": {}
                     }
                 },
-                "coeficiente_administraci_n": {
-                    "type": [
-                        "integer",
-                        "number",
-                        "boolean",
-                        "string"
-                    ]
-                },
-                "email": {
-                    "type": [
-                        "integer",
-                        "number",
-                        "boolean",
-                        "string"
-                    ]
-                },
-                "direcci_n": {
-                    "type": [
-                        "integer",
-                        "number",
-                        "boolean",
-                        "string"
-                    ]
-                },
-                "ciudad": {
-                    "type": [
-                        "integer",
-                        "number",
-                        "boolean",
-                        "string"
-                    ]
-                },
-                "nombre_asesor": {
-                    "type": [
-                        "integer",
-                        "number",
-                        "boolean",
-                        "string"
-                    ]
-                },
-                "identificaci_n_asesor": {
-                    "type": [
-                        "integer",
-                        "number",
-                        "boolean",
-                        "string"
-                    ]
-                },
-                "cargo_asesor": {
-                    "type": [
-                        "integer",
-                        "number",
-                        "boolean",
-                        "string"
-                    ]
-                }
+                "coeficiente_administraci_n": {},
+                "email": {},
+                "direcci_n": {},
+                "ciudad": {},
+                "nombre_asesor": {},
+                "identificaci_n_asesor": {},
+                "cargo_asesor": {}
             }
         },
         "compradores": {
@@ -354,211 +95,36 @@
             "items": {
                 "type": "object",
                 "properties": {
-                    "nombre": {
-                        "type": [
-                            "integer",
-                            "number",
-                            "boolean",
-                            "string"
-                        ]
-                    },
-                    "primer_apellido": {
-                        "type": [
-                            "integer",
-                            "number",
-                            "boolean",
-                            "string"
-                        ]
-                    },
-                    "segundo_apellido": {
-                        "type": [
-                            "integer",
-                            "number",
-                            "boolean",
-                            "string"
-                        ]
-                    },
-                    "tipo_documento": {
-                        "type": [
-                            "integer",
-                            "number",
-                            "boolean",
-                            "string"
-                        ]
-                    },
-                    "n_mero_documento": {
-                        "type": [
-                            "integer",
-                            "number",
-                            "boolean",
-                            "string"
-                        ]
-                    },
-                    "fecha_expedici_n": {
-                        "type": [
-                            "integer",
-                            "number",
-                            "boolean",
-                            "string"
-                        ]
-                    },
-                    "lugar_expedici_n": {
-                        "type": [
-                            "integer",
-                            "number",
-                            "boolean",
-                            "string"
-                        ]
-                    },
-                    "fecha_nacimiento": {
-                        "type": [
-                            "integer",
-                            "number",
-                            "boolean",
-                            "string"
-                        ]
-                    },
-                    "lugar_nacimiento": {
-                        "type": [
-                            "integer",
-                            "number",
-                            "boolean",
-                            "string"
-                        ]
-                    },
-                    "nacionalidad": {
-                        "type": [
-                            "integer",
-                            "number",
-                            "boolean",
-                            "string"
-                        ]
-                    },
-                    "estado_civil": {
-                        "type": [
-                            "integer",
-                            "number",
-                            "boolean",
-                            "string"
-                        ]
-                    },
-                    "sexo": {
-                        "type": [
-                            "integer",
-                            "number",
-                            "boolean",
-                            "string"
-                        ]
-                    },
+                    "nombre": {},
+                    "primer_apellido": {},
+                    "segundo_apellido": {},
+                    "tipo_documento": {},
+                    "n_mero_documento": {},
+                    "fecha_expedici_n": {},
+                    "lugar_expedici_n": {},
+                    "fecha_nacimiento": {},
+                    "lugar_nacimiento": {},
+                    "nacionalidad": {},
+                    "estado_civil": {},
+                    "sexo": {},
                     "c_nyugue": {
                         "type": "object",
                         "properties": {
-                            "nombres": {
-                                "type": [
-                                    "integer",
-                                    "number",
-                                    "boolean",
-                                    "string"
-                                ]
-                            },
-                            "apellidos": {
-                                "type": [
-                                    "integer",
-                                    "number",
-                                    "boolean",
-                                    "string"
-                                ]
-                            },
-                            "n_mero_documento": {
-                                "type": [
-                                    "integer",
-                                    "number",
-                                    "boolean",
-                                    "string"
-                                ]
-                            },
-                            "a_os_de_convivencia": {
-                                "type": [
-                                    "integer",
-                                    "number",
-                                    "boolean",
-                                    "string"
-                                ]
-                            },
-                            "fecha_de_liquidaci_n_de_sociedad": {
-                                "type": [
-                                    "integer",
-                                    "number",
-                                    "boolean",
-                                    "string"
-                                ]
-                            },
-                            "n_mero_de_notar_a_o_juzgado": {
-                                "type": [
-                                    "integer",
-                                    "number",
-                                    "boolean",
-                                    "string"
-                                ]
-                            },
-                            "n_mero_de_escritura": {
-                                "type": [
-                                    "integer",
-                                    "number",
-                                    "boolean",
-                                    "string"
-                                ]
-                            }
+                            "nombres": {},
+                            "apellidos": {},
+                            "n_mero_documento": {},
+                            "a_os_de_convivencia": {},
+                            "fecha_de_liquidaci_n_de_sociedad": {},
+                            "n_mero_de_notar_a_o_juzgado": {},
+                            "n_mero_de_escritura": {}
                         }
                     },
-                    "correo_electr_nico": {
-                        "type": [
-                            "integer",
-                            "number",
-                            "boolean",
-                            "string"
-                        ]
-                    },
-                    "n_mero_de_celular": {
-                        "type": [
-                            "integer",
-                            "number",
-                            "boolean",
-                            "string"
-                        ]
-                    },
-                    "n_mero_de_tel_fono": {
-                        "type": [
-                            "integer",
-                            "number",
-                            "boolean",
-                            "string"
-                        ]
-                    },
-                    "direcci_n_de_residencia": {
-                        "type": [
-                            "integer",
-                            "number",
-                            "boolean",
-                            "string"
-                        ]
-                    },
-                    "ciudad_de_residencia": {
-                        "type": [
-                            "integer",
-                            "number",
-                            "boolean",
-                            "string"
-                        ]
-                    },
-                    "pa_s_de_residencia": {
-                        "type": [
-                            "integer",
-                            "number",
-                            "boolean",
-                            "string"
-                        ]
-                    },
+                    "correo_electr_nico": {},
+                    "n_mero_de_celular": {},
+                    "n_mero_de_tel_fono": {},
+                    "direcci_n_de_residencia": {},
+                    "ciudad_de_residencia": {},
+                    "pa_s_de_residencia": {},
                     "informacion_financiera": {
                         "type": "object",
                         "properties": {
@@ -567,107 +133,23 @@
                                 "items": {
                                     "type": "object",
                                     "properties": {
-                                        "actividad": {
-                                            "type": [
-                                                "integer",
-                                                "number",
-                                                "boolean",
-                                                "string"
-                                            ]
-                                        },
-                                        "c_digo_ciiu": {
-                                            "type": [
-                                                "integer",
-                                                "number",
-                                                "boolean",
-                                                "string"
-                                            ]
-                                        },
-                                        "ocupaci_n": {
-                                            "type": [
-                                                "integer",
-                                                "number",
-                                                "boolean",
-                                                "string"
-                                            ]
-                                        },
-                                        "cargo": {
-                                            "type": [
-                                                "integer",
-                                                "number",
-                                                "boolean",
-                                                "string"
-                                            ]
-                                        },
-                                        "total": {
-                                            "type": [
-                                                "integer",
-                                                "number",
-                                                "boolean",
-                                                "string"
-                                            ]
-                                        },
+                                        "actividad": {},
+                                        "c_digo_ciiu": {},
+                                        "ocupaci_n": {},
+                                        "cargo": {},
+                                        "total": {},
                                         "empresa": {
                                             "type": "object",
                                             "properties": {
-                                                "nombre": {
-                                                    "type": [
-                                                        "integer",
-                                                        "number",
-                                                        "boolean",
-                                                        "string"
-                                                    ]
-                                                },
-                                                "tel_fono": {
-                                                    "type": [
-                                                        "integer",
-                                                        "number",
-                                                        "boolean",
-                                                        "string"
-                                                    ]
-                                                },
-                                                "direcci_n": {
-                                                    "type": [
-                                                        "integer",
-                                                        "number",
-                                                        "boolean",
-                                                        "string"
-                                                    ]
-                                                },
-                                                "telefono": {
-                                                    "type": [
-                                                        "integer",
-                                                        "number",
-                                                        "boolean",
-                                                        "string"
-                                                    ]
-                                                }
+                                                "nombre": {},
+                                                "tel_fono": {},
+                                                "direcci_n": {},
+                                                "telefono": {}
                                             }
                                         },
-                                        "_p_que_tipo_de_producto_y_o_servicio_comercializa": {
-                                            "type": [
-                                                "integer",
-                                                "number",
-                                                "boolean",
-                                                "string"
-                                            ]
-                                        },
-                                        "cesantias": {
-                                            "type": [
-                                                "integer",
-                                                "number",
-                                                "boolean",
-                                                "string"
-                                            ]
-                                        },
-                                        "entidad": {
-                                            "type": [
-                                                "integer",
-                                                "number",
-                                                "boolean",
-                                                "string"
-                                            ]
-                                        }
+                                        "_p_que_tipo_de_producto_y_o_servicio_comercializa": {},
+                                        "cesantias": {},
+                                        "entidad": {}
                                     },
                                     "required": [
                                         "actividad",
@@ -682,202 +164,40 @@
                                     ]
                                 }
                             },
-                            "cifin": {
-                                "type": [
-                                    "integer",
-                                    "number",
-                                    "boolean",
-                                    "string"
-                                ]
-                            },
-                            "aporte_por_primas": {
-                                "type": [
-                                    "integer",
-                                    "number",
-                                    "boolean",
-                                    "string"
-                                ]
-                            },
-                            "ahorros": {
-                                "type": [
-                                    "integer",
-                                    "number",
-                                    "boolean",
-                                    "string"
-                                ]
-                            },
-                            "gastos_personales": {
-                                "type": [
-                                    "integer",
-                                    "number",
-                                    "boolean",
-                                    "string"
-                                ]
-                            },
-                            "aportes": {
-                                "type": [
-                                    "integer",
-                                    "number",
-                                    "boolean",
-                                    "string"
-                                ]
-                            },
+                            "cifin": {},
+                            "aporte_por_primas": {},
+                            "ahorros": {},
+                            "gastos_personales": {},
+                            "aportes": {},
                             "subsidio": {
                                 "type": "object",
                                 "properties": {
-                                    "entidad": {
-                                        "type": [
-                                            "integer",
-                                            "number",
-                                            "boolean",
-                                            "string"
-                                        ]
-                                    },
-                                    "valor": {
-                                        "type": [
-                                            "integer",
-                                            "number",
-                                            "boolean",
-                                            "string"
-                                        ]
-                                    }
+                                    "entidad": {},
+                                    "valor": {}
                                 }
                             },
-                            "activo": {
-                                "type": [
-                                    "integer",
-                                    "number",
-                                    "boolean",
-                                    "string"
-                                ]
-                            },
-                            "pasivo": {
-                                "type": [
-                                    "integer",
-                                    "number",
-                                    "boolean",
-                                    "string"
-                                ]
-                            }
+                            "activo": {},
+                            "pasivo": {}
                         }
                     },
                     "informacion_pep": {
                         "type": "object",
                         "properties": {
-                            "_p_por_su_actividad_o_cargo_maneja_recursos p_blicos": {
-                                "type": [
-                                    "integer",
-                                    "number",
-                                    "boolean",
-                                    "string"
-                                ]
-                            },
-                            "_p_por_su_actividad_u_oficio_goza_usted_de_reconocimiento_p_blico_general": {
-                                "type": [
-                                    "integer",
-                                    "number",
-                                    "boolean",
-                                    "string"
-                                ]
-                            },
-                            "_p_por_su_actividad_o_cargo_ejerce_alg_n_grado_de_poder_p_blico": {
-                                "type": [
-                                    "integer",
-                                    "number",
-                                    "boolean",
-                                    "string"
-                                ]
-                            },
-                            "_p_existe_alg_n_v_nculo_entre_usted_y_una_persona_considerada_p_blicamente_expuesta": {
-                                "type": [
-                                    "integer",
-                                    "number",
-                                    "boolean",
-                                    "string"
-                                ]
-                            },
-                            "_p_es_usted_sujeto_de_obligaciones_tributarias_en_otros_pa_ses_o_grupo_de_pa_ses": {
-                                "type": [
-                                    "integer",
-                                    "number",
-                                    "boolean",
-                                    "string"
-                                ]
-                            },
-                            "nombre_gerente_comercial": {
-                                "type": [
-                                    "integer",
-                                    "number",
-                                    "boolean",
-                                    "string"
-                                ]
-                            },
-                            "n_mero_documento_gerente_comercial": {
-                                "type": [
-                                    "integer",
-                                    "number",
-                                    "boolean",
-                                    "string"
-                                ]
-                            },
-                            "nombre_oficial_cumplimiento": {
-                                "type": [
-                                    "integer",
-                                    "number",
-                                    "boolean",
-                                    "string"
-                                ]
-                            },
-                            "n_mero_documento_oficial_cumplimiento": {
-                                "type": [
-                                    "integer",
-                                    "number",
-                                    "boolean",
-                                    "string"
-                                ]
-                            },
-                            "_p_por_su_actividad_o_cargo_maneja_recursos_p_blicos": {
-                                "type": [
-                                    "integer",
-                                    "number",
-                                    "boolean",
-                                    "string"
-                                ]
-                            }
+                            "_p_por_su_actividad_o_cargo_maneja_recursos_p_blicos": {},
+                            "_p_por_su_actividad_u_oficio_goza_usted_de_reconocimiento_p_blico_general": {},
+                            "_p_por_su_actividad_o_cargo_ejerce_alg_n_grado_de_poder_p_blico": {},
+                            "_p_existe_alg_n_v_nculo_entre_usted_y_una_persona_considerada_p_blicamente_expuesta": {},
+                            "_p_es_usted_sujeto_de_obligaciones_tributarias_en_otros_pa_ses_o_grupo_de_pa_ses": {},
+                            "nombre_gerente_comercial": {},
+                            "n_mero_documento_gerente_comercial": {},
+                            "nombre_oficial_cumplimiento": {},
+                            "n_mero_documento_oficial_cumplimiento": {}
                         }
                     },
-                    "origen_de_fondos": {
-                        "type": [
-                            "integer",
-                            "number",
-                            "boolean",
-                            "string"
-                        ]
-                    },
-                    "acepta_campa_as_de_promoci_n_de_proyectos": {
-                        "type": [
-                            "integer",
-                            "number",
-                            "boolean",
-                            "string"
-                        ]
-                    },
-                    "acepta_estudios_estad_sticos_del_cliente": {
-                        "type": [
-                            "integer",
-                            "number",
-                            "boolean",
-                            "string"
-                        ]
-                    },
-                    "Nacionalidad": {
-                        "type": [
-                            "integer",
-                            "number",
-                            "boolean",
-                            "string"
-                        ]
-                    }
+                    "origen_de_fondos": {},
+                    "acepta_campa_as_de_promoci_n_de_proyectos": {},
+                    "acepta_estudios_estad_sticos_del_cliente": {},
+                    "Nacionalidad": {}
                 },
                 "required": [
                     "nombre",

@@ -56,17 +56,24 @@ function azureFunc() {
 //console.log(azureFunc());
 
 function makePayload(json, properties) {
-    Object.keys(json).forEach(function (key_1) {
-        if (json[key_1] instanceof object) {
-        
-        } else if (json[key_1] instanceof array) {
-        } else {
-            json[key_1] = properties
-        }
-    });
-    return json;
+    let jsonSchemaGenerator = require('json-schema-generator'),
+        obj = { some: { object: true } },
+        schemaObj;
+    schemaObj = jsonSchemaGenerator(json);
+    return schemaObj;
 };
 
 
 
-console.log(JSON.stringify(makePayload(require('./autorizacion_centrales.json'))));
+//console.log(JSON.stringify(makePayload(require('./autorizacion_centrales.json'))));
+
+function makePayload(content = '') {
+    let fileName = `ejemplos/schema-${Date.now()}.json`;
+    let fs = require('fs');
+    fs.writeFile('./' + fileName, content, function (err) {
+        if (err) throw err;
+        console.log('File ' + fileName + ' was created successfully.');
+    });
+}
+
+makePayload(JSON.stringify(require('./autorizacion_centrales.json')));
