@@ -1,4 +1,5 @@
-var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+let XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+let URL = require("url").URL;
 
 function sendRequest(method = "POST", link, json) {
     try {
@@ -78,7 +79,3 @@ function makePayload(json, properties) {
     });
     return json;
 };
-
-
-
-console.log(JSON.stringify(makePayload(require('./autorizacion_centrales.json'))));
