@@ -1,20 +1,32 @@
 var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 
 function sendRequest(method = "POST", link, json) {
-    const json_ = require(`./${json}.json`)
-    let xml = new XMLHttpRequest();
-    xml.open(method, link);
-    xml.onreadystatechange = function () {
-        if (xml.readyState == 4) {
-            if (xml.status >= 200 && xml.status < 300) {
-                console.log("Éxito!: Status: " + xml.status + " Detalles: " + xml.responseText + " .endPoint");
-            } else {
-                console.log("Error!: Status: " + xml.status + " Detalles: " + xml.responseText + " .endPoint");
+    try {
+        const json_ = require(`./${json}.json`);
+        let xml = new XMLHttpRequest();
+        let miliSegundos = 0;
+        xml.open(method, link);
+        let hostname = new URL(link).host;
+        console.log("\nSolicitud enviada a " + hostname + "...\n");
+        xml.onreadystatechange = function () {
+            if (xml.readyState == 4) {
+                let mainHeader = "[" + new Date().toUTCString() + "] SERVER " + hostname;
+                if (xml.status >= 200 && xml.status < 300) {
+                    console.log(mainHeader + " : Éxito!: Status: " + xml.status + " \nDetalles: " + xml.responseText + " .endPoint \nTime: " + (miliSegundos / 60000).toFixed(3) + " min (" + (miliSegundos / 1000).toFixed(3) + " s / " + miliSegundos + " ms)");
+                } else {
+                    console.log(mainHeader + " : Error!: Status: " + xml.status + " \nDetalles: " + xml.responseText + " .endPoint \nTime: " + (miliSegundos / 60000).toFixed(3) + " min (" + (miliSegundos / 1000).toFixed(3) + " s / " + miliSegundos + " ms)");
+                }
+                clearInterval(temporizador);
             }
-        }
-    };
-    xml.setRequestHeader("Content-Type", "application/json");
-    xml.send(JSON.stringify(json_));
+        };
+        xml.setRequestHeader("Content-Type", "application/json");
+        xml.send(JSON.stringify(json_));
+        let temporizador = setInterval(function () {
+            miliSegundos++;
+        }, 1);
+    } catch (error) {
+        console.log("Error!: " + error);
+    }
 }
 
 //Prueba Salesforce HTTP Requester
@@ -58,7 +70,7 @@ function azureFunc() {
 function makePayload(json, properties) {
     Object.keys(json).forEach(function (key_1) {
         if (json[key_1] instanceof object) {
-        
+
         } else if (json[key_1] instanceof array) {
         } else {
             json[key_1] = properties
