@@ -45,9 +45,34 @@ export default class JsonDocPopulator {
             console.log(`Error detectado en el rango ${path}\nDetalles: ${error}`);
         }
     }
-    get(object, trace) {
+    getByTrace(object, trace) {
         try {
-            let traceArray = trace.split('>');
+            let traceArray = process.argv.slice(2);
+            if (traceArray.length > 1) {
+                if (traceArray[0].toLowerCase() === 'trace') {
+                    let objeto = object;
+                    let resultado = null;
+                    let splittedTrace = traceArray[1].split('>');
+                    splittedTrace.forEach((key) => {
+                        resultado = objeto[key]
+                        objeto = objeto[key]
+                    })
+                    return resultado;
+                } else {
+                    throw new Error("Debe especificar la acción de traza");
+                }
+            } else if (trace != null) {
+                let objeto = object;
+                let resultado = null;
+                let splittedTrace = trace.split('>');
+                splittedTrace.forEach((key) => {
+                    resultado = objeto[key]
+                    objeto = objeto[key]
+                })
+                return resultado;
+            } else {
+                throw new Error("No se detectó una traza");
+            }
         } catch (error) {
             console.log(`Error detectado en el rango ${path}\nDetalles: ${error}`);
         }
