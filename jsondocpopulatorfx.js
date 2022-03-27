@@ -74,7 +74,7 @@ export default class JsonDocPopulator {
                 throw new Error("No se detectó una traza");
             }
         } catch (error) {
-            console.log(`Error detectado en el rango ${path}\nDetalles: ${error}`);
+            console.log(`${error}`);
         }
     }
 };

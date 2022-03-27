@@ -1,0 +1,27 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbol</title>
+    <script src="https://cdn.rawgit.com/caldwell/renderjson/master/renderjson.js"></script>
+</head>
+
+<body>
+    <script src="workspace.js">
+        let data = "";
+        let xml = new XMLHttpRequest();
+        xml.open("POST", window.location.href);
+        xml.onreadystatechange = () => {
+            if (xml.readyState == 4) {
+                data = xml.responseText;
+            }
+        }
+        xml.send();
+        document.getElementById("container").appendChild();
+    </script>
+</body>
+
+</html>
