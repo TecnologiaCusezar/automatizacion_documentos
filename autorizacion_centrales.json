@@ -24,6 +24,19 @@
                 "terraza": 0,
                 "patio": 0
             },
+            "garajes": [
+                {
+                    "c_digo": "1",
+                    "descripci_n": "Descubierto",
+                    "valor": ""
+                }
+            ],
+            "dep_sitos": [
+                {
+                    "c_digo": "",
+                    "descripci_n": ""
+                }
+            ],
             "financiaci_n": {
                 "valor": 610970000,
                 "plan_de_pagos": [
@@ -340,7 +353,7 @@
                         "periodo": "34",
                         "entidad": "La Hipotecaria",
                         "amortizaci_n": "UVR",
-                        "plazo": 0
+                        "plazo": 30
                     }
                 ],
                 "plazo": 34,
@@ -360,9 +373,9 @@
         "email": "gregal@cusezar.com",
         "direcci_n": "Cra. 68D #21-35",
         "ciudad": "Bogota D.C.",
-        "nombre_asesor": "",
-        "identificaci_n_asesor": "",
-        "cargo_asesor": ""
+        "nombre_asesor": "Juan pablo Roa",
+        "identificaci_n_asesor": "1000617084",
+        "cargo_asesor": "Promotor fines de semana"
     },
     "compradores": [
         {
@@ -375,9 +388,9 @@
             "lugar_expedici_n": "BUCARAMANGA",
             "fecha_nacimiento": "1980-08-19",
             "lugar_nacimiento": "BOGOTÁ D.C.",
-            "nacionalidad": "",
+            "nacionalidad": "Colombiano",
             "estado_civil": "UL",
-            "sexo": "",
+            "sexo": "M",
             "c_nyugue": {
                 "nombres": "MARTHA LILIANA",
                 "apellidos": "ROJAS ROJAS",
@@ -398,8 +411,8 @@
                     {
                         "actividad": "Empleado",
                         "c_digo_ciiu": "0010",
-                        "ocupaci_n": "",
-                        "cargo": "",
+                        "ocupaci_n": "ASALARIADO",
+                        "cargo": "Gestor de Nómina",
                         "total": 6079832,
                         "empresa": {
                             "nombre": "SECRETARIA DISTRITAL DE GOBIERNO",
@@ -416,7 +429,7 @@
                         "c_digo_ciiu": "",
                         "ocupaci_n": "",
                         "cargo": "",
-                        "total": 0,
+                        "total": 13,
                         "empresa": {
                             "nombre": "",
                             "tel_fono": "",
@@ -453,8 +466,7 @@
             },
             "origen_de_fondos": "De mi actividad como Empleado",
             "acepta_campa_as_de_promoci_n_de_proyectos": true,
-            "acepta_estudios_estad_sticos_del_cliente": true,
-            "Nacionalidad": "Masculino"
+            "acepta_estudios_estad_sticos_del_cliente": true
         },
         {
             "nombre": "MARTHA LILIANA",
