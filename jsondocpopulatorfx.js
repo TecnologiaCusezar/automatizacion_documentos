@@ -6,16 +6,18 @@ export default class JsonDocPopulator {
             let self = this;
             let tempPath = path;
             let keys = Object.keys(object);
-            keys.forEach(function (key, key_) {
+            keys.forEach(function (key) {
                 if (key != 0) {
                     if (object[key] instanceof Array) {
                         tempPath += `?['${key}']`;
                         object[key].forEach(function (obj, key_) {
                             self.getAttributes(`${tempPath}?[${key_}]`, object[key][key_]);
                         });
+                        tempPath = path;
                     } else if (object[key] instanceof Object) {
                         tempPath += `?['${key}']`;
                         self.getAttributes(tempPath, object[key]);
+                        tempPath = path;
                     } else {
                         let value = object[key];
                         if (typeof value == "boolean") {
@@ -28,6 +30,12 @@ export default class JsonDocPopulator {
                         } else if (Number.isInteger(value)) {
                             let newPath = `${tempPath}?['${key}']`;
                             object[key] = `int(${newPath})`;
+                        } else if (!isNaN(Date.parse(value))) {
+                            let newPath = `${tempPath}?['${key}']`;
+                            object[key] = [
+                                `${newPath}`,
+                                `substring(if(equals(${newPath},null),'  -  -    ',${newPath}),0)`
+                            ];
                         } else if (typeof value === 'string') {
                             let newPath = `${tempPath}?['${key}']`;
                             object[key] = [

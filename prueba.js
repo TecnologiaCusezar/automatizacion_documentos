@@ -54,7 +54,7 @@ function sendRequest(method = "POST", link, json) {
 //sendRequest("POST","https://prod-22.westus.logic.azure.com:443/workflows/623a821225cf4d2b9e984e8d2f7ea5b8/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=1TkPdu1nbcf3_Rwv0gsCZ9cpdTs94KNKwZp3GFVUjdc","salesforce_requester");
 
 //Prueba Autorización centrales
-sendRequest("POST", "https://prod-91.westus.logic.azure.com:443/workflows/33f4fcf6b6c24d0ca393aab34b89cf5c/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Psa2H_3VV52p_3N5CkMWtDacg-THi7HjzOVSPkYfzd8", "autorizacion_centrales");
+//sendRequest("POST", "https://prod-91.westus.logic.azure.com:443/workflows/33f4fcf6b6c24d0ca393aab34b89cf5c/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Psa2H_3VV52p_3N5CkMWtDacg-THi7HjzOVSPkYfzd8", "autorizacion_centrales");
 
 //Prueba Indagación estado civil
 //sendRequest("POST","https://prod-150.westus.logic.azure.com:443/workflows/d8f2433c8291427991fac9cc2238af73/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=dOlgsLAegH8rIIpXDJUu_RMhV0ePwzF_mImkR61U1ws","autorizacion_centrales");
@@ -63,7 +63,7 @@ sendRequest("POST", "https://prod-91.westus.logic.azure.com:443/workflows/33f4fc
 //sendRequest("POST","https://prod-95.westus.logic.azure.com:443/workflows/b5917db857b34868a1b3a47af4a5e4d1/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Zpckx4oSlzr4TtBR6bgsSiKYb4QlHgW8P20MlIob0zA","autorizacion_centrales");
 
 //Prueba Boletín de ventas
-//sendRequest("POST", "https://prod-190.westus.logic.azure.com:443/workflows/82dfae4590034ed992a3d56aad858ad4/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=mMgvmHQHf3S0XxqFhggEyqyIL-oXJkj6WfyuNrlwSmQ", "boletin_ventas");
+sendRequest("POST", "https://prod-190.westus.logic.azure.com:443/workflows/82dfae4590034ed992a3d56aad858ad4/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=mMgvmHQHf3S0XxqFhggEyqyIL-oXJkj6WfyuNrlwSmQ", "boletin_ventas");
 
 //let json_cliente = require('./autorizacion_centrales.json');
 

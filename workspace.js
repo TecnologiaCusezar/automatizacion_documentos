@@ -4,12 +4,23 @@ import fs from 'fs';
 import renderjson from 'renderjson';
 
 let json = JSON.parse(fs.readFileSync("./boletin_ventas.json"));
+let newCuote = JSON.parse(`{
+    "concepto": "Cuota",
+    "fecha": "2024-08-26",
+    "valor": 0,
+    "periodo": "",
+    "entidad": "",
+    "amortizaci_n": "",
+    "plazo": 0
+}`);
+let array = json.proyecto.unidad.financiaci_n.plan_de_pagos;
 let populator = new JsonDocPopulator();
 let cliente = populator.getAttributes("triggerBody()", json);
 //fs.writeFileSync('./boletin_completer.json', JSON.stringify(cliente), 'utf-8');
 //console.log("El archivo boletin_completer.json ha sido actualizado !");
 console.log('\n');
-console.log(populator.getByTrace(cliente,"proyecto>unidad>financiaci_n>plan_de_pagos>20>fecha>0"));
+console.log('\n');
+console.log(populator.getByTrace(cliente, "proyecto>unidad>financiaci_n>plan_de_pagos>20>fecha>1"));
 // console.log(populator.getByTrace(cliente,"proyecto>unidad>financiaci_n>plan_de_pagos>20>concepto>0"));
 // console.log(populator.getByTrace(cliente,"proyecto>unidad>financiaci_n>plan_de_pagos>20>valor"));
 // console.log(populator.getByTrace(cliente,"compradores>2>ciudad_de_residencia>0"));
