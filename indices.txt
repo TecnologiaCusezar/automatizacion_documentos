@@ -1,0 +1,32 @@
+@{triggerBody()?['proyecto']?['unidad']?['financiaci_n']?['plan_de_pagos']?[38]?['enditad']}
+@{triggerBody()?['compradores']?[2]?['c_nyugue']?['n_mero_de_notar_a_o_juzgado']}
+@{if(equals(triggerBody()?['compradores']?[3]?['estado_civil'],'SO'),'X','')}
+@{triggerBody()?['compradores']?[1]?['c_nyugue']?['fecha_de_liquidaci_n_de_sociedad']}
+@{substring(if(equals(triggerBody()?['compradores']?[1]?['c_nyugue']?['fecha_de_liquidaci_n_de_sociedad'],null),'  -  -    ',triggerBody()?['compradores']?[1]?['c_nyugue']?['fecha_de_liquidaci_n_de_sociedad']),6,2)}
+@{substring(if(equals(triggerBody()?['proyecto']?['unidad']?['financiaci_n']?['plan_de_pagos']?[29]?['fecha'],null),'  -  -    ',triggerBody()?['proyecto']?['unidad']?['financiaci_n']?['plan_de_pagos']?[29]?['fecha']),6,2)}
+@{substring(if(equals(triggerBody()?['proyecto']?['unidad']?['financiaci_n']?['plan_de_pagos']?[13]?['fecha'],null),'  -  -    ',triggerBody()?['proyecto']?['unidad']?['financiaci_n']?['plan_de_pagos']?[13]?['fecha']),0,4)}
+
+
+
+@{substring(if(equals(triggerBody()?['proyecto']?['unidad']?['financiaci_n']?['plan_de_pagos']?[20]?['fecha'],null),'  -  -    ',triggerBody()?['proyecto']?['unidad']?['financiaci_n']?['plan_de_pagos']?[20]?['fecha']),8,2)}
+@{substring(if(equals(triggerBody()?['proyecto']?['unidad']?['financiaci_n']?['plan_de_pagos']?[5]?['fecha'],null),'  -  -    ',triggerBody()?['proyecto']?['unidad']?['financiaci_n']?['plan_de_pagos']?[5]?['fecha']),1,4)}
+
+
+
+@{if(equals(triggerBody()?['proyecto']?['unidad']?['financiaci_n']?['plan_de_pagos']?[15]?['fecha'],null),' ',substring(triggerBody()?['proyecto']?['unidad']?['financiaci_n']?['plan_de_pagos']?[15]?['fecha'],1,4))}
+
+@{if(equals(triggerBody()?['proyecto']?['unidad']?['financiaci_n']?['plan_de_pagos']?[21]?['fecha'],null),' ',substring(triggerBody()?['proyecto']?['unidad']?['financiaci_n']?['plan_de_pagos']?[21]?['fecha'],1,4))}
+
+@{if(or(equals(triggerBody()?['proyecto']?['unidad']?['financiaci_n']?['plan_de_pagos']?[5]?['fecha'],null),' ',substring(triggerBody()?['proyecto']?['unidad']?['financiaci_n']?['plan_de_pagos']?[5]?['fecha'],1,4))}
+
+@{if(equals())}
+
+@{triggerBody()?['compradores']?[0]?['nombre']} @{triggerBody()?['compradores']?[0]?['primer_apellido']}@{if(or(equals(triggerBody()?['compradores']?[0]?['segundo_apellido'],''),equals(triggerBody()?['compradores']?[0]?['segundo_apellido'],' ')),'',concat(' ',triggerBody()?['compradores']?[0]?['segundo_apellido']))}
+
+
+@{triggerBody()?['compradores']?[0]?['nombre']} @{triggerBody()?['compradores']?[0]?['primer_apellido']}@{if(or(equals(triggerBody()?['compradores']?[0]?['segundo_apellido'],''),equals(triggerBody()?['compradores']?[0]?['segundo_apellido'],' ')),'',concat(' ',triggerBody()?['compradores']?[0]?['segundo_apellido']))}
+
+
+
+
+@{if(less(sub(int(items('Apply_to_each')?['informacion_financiera']?['activo']),int(items('Apply_to_each')?['informacion_financiera']?['pasivo'])),0),0,sub(int(items('Apply_to_each')?['informacion_financiera']?['activo']),int(items('Apply_to_each')?['informacion_financiera']?['pasivo'])))}

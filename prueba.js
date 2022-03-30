@@ -26,22 +26,6 @@ function sendRequest(method = "POST", link, json) {
             }
             clearInterval(temporizador);
         });
-        /*
-        xml.open(method, link);
-        xml.onreadystatechange = function () {
-            if (xml.readyState == 4) {
-                let mainHeader = "[" + new Date().toUTCString() + "] SERVER " + hostname;
-                if (xml.status >= 200 && xml.status < 300) {
-                    console.log(mainHeader + " : Éxito!: Status: " + xml.status + " \nDetalles: " + xml.responseText + " .endPoint \nTime: " + (miliSegundos / 60000).toFixed(3) + " min (" + (miliSegundos / 1000).toFixed(3) + " s / " + miliSegundos + " ms)");
-                } else {
-                    console.log(mainHeader + " : Error!: Status: " + xml.status + " \nDetalles: " + xml.responseText + " .endPoint \nTime: " + (miliSegundos / 60000).toFixed(3) + " min (" + (miliSegundos / 1000).toFixed(3) + " s / " + miliSegundos + " ms)");
-                }
-                clearInterval(temporizador);
-            }
-        };
-        xml.setRequestHeader("Content-Type", "application/json");
-        xml.send(JSON.stringify(json_));
-        */
         let temporizador = setInterval(function () {
             miliSegundos++;
         }, 1);

@@ -1,0 +1,3198 @@
+{
+    "type": "object",
+    "properties": {
+        "1465781472": {
+            "type": "string",
+            "title": "5) Correo electrónico Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1465781472"
+        },
+        "765203834": {
+            "type": "string",
+            "title": "5) Teléfono Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/765203834"
+        },
+        "879591904": {
+            "type": "string",
+            "title": "5) Número de celular Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/879591904"
+        },
+        "-582374013": {
+            "type": "string",
+            "title": "5) Teléfono Oficina Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-582374013"
+        },
+        "-338702368": {
+            "type": "string",
+            "title": "5) Ciudad de residencia Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-338702368"
+        },
+        "1149718355": {
+            "type": "string",
+            "title": "4) Correo electrónico Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1149718355"
+        },
+        "1888223930": {
+            "type": "string",
+            "title": "4) Teléfono Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1888223930"
+        },
+        "-266082206": {
+            "type": "string",
+            "title": "4) Número de celular Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-266082206"
+        },
+        "1531833048": {
+            "type": "string",
+            "title": "4) Teléfono Oficina Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1531833048"
+        },
+        "-1168017349": {
+            "type": "string",
+            "title": "4) Ciudad de residencia Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1168017349"
+        },
+        "376054447": {
+            "type": "string",
+            "title": "3) Correo electrónico Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/376054447"
+        },
+        "-447388566": {
+            "type": "string",
+            "title": "3) Teléfono Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-447388566"
+        },
+        "-1649123865": {
+            "type": "string",
+            "title": "3) Número de celular Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1649123865"
+        },
+        "-866901562": {
+            "type": "string",
+            "title": "3) Teléfono Oficina Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-866901562"
+        },
+        "-150987624": {
+            "type": "string",
+            "title": "3) Ciudad de residencia Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-150987624"
+        },
+        "1094214729": {
+            "type": "string",
+            "title": "2) Correo electrónico Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1094214729"
+        },
+        "-1810159713": {
+            "type": "string",
+            "title": "2) Teléfono Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1810159713"
+        },
+        "1572623250": {
+            "type": "string",
+            "title": "2) Número de celular Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1572623250"
+        },
+        "1415430277": {
+            "type": "string",
+            "title": "2) Teléfono Oficina Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1415430277"
+        },
+        "32857219": {
+            "type": "string",
+            "title": "2) Ciudad de residencia Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/32857219"
+        },
+        "2043098331": {
+            "type": "string",
+            "title": "1) Correo electrónico Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/2043098331"
+        },
+        "1154880574": {
+            "type": "string",
+            "title": "1) Teléfono Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1154880574"
+        },
+        "1246846306": {
+            "type": "string",
+            "title": "1) Número de celular Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1246846306"
+        },
+        "153723974": {
+            "type": "string",
+            "title": "1) Teléfono Oficina Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/153723974"
+        },
+        "905413854": {
+            "type": "string",
+            "title": "1) Ciudad de residencia Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/905413854"
+        },
+        "1285695111": {
+            "type": "string",
+            "title": "Dirección de correspondencia",
+            "description": "Dirección de correspondencia",
+            "x-ms-property-name-alias": "dynamicFileSchema/1285695111"
+        },
+        "1675679446": {
+            "type": "string",
+            "title": "5) Opción C.C. Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1675679446"
+        },
+        "837508704": {
+            "type": "string",
+            "title": "5) Opción NIT Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/837508704"
+        },
+        "-797148567": {
+            "type": "string",
+            "title": "5) Opción C.E. Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-797148567"
+        },
+        "1890370324": {
+            "type": "string",
+            "title": "5) Número de identificación comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1890370324"
+        },
+        "991990012": {
+            "type": "string",
+            "title": "5) Lugar de expedición Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/991990012"
+        },
+        "1789387784": {
+            "type": "string",
+            "title": "5) Nombre o razón social Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1789387784"
+        },
+        "-906142068": {
+            "type": "string",
+            "title": "4) Opción C.C. Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-906142068"
+        },
+        "-2133938642": {
+            "type": "string",
+            "title": "4) Opción NIT Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-2133938642"
+        },
+        "1985346897": {
+            "type": "string",
+            "title": "4) Opción C.E. Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1985346897"
+        },
+        "1950125882": {
+            "type": "string",
+            "title": "4) Número de identificación comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1950125882"
+        },
+        "135075613": {
+            "type": "string",
+            "title": "4) Lugar de expedición Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/135075613"
+        },
+        "-132101997": {
+            "type": "string",
+            "title": "4) Nombre o razón social Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-132101997"
+        },
+        "1312214196": {
+            "type": "string",
+            "title": "3) Opción C.C. Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1312214196"
+        },
+        "1898083322": {
+            "type": "string",
+            "title": "3) Opción NIT Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1898083322"
+        },
+        "-1750717026": {
+            "type": "string",
+            "title": "3) Opción C.E. Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1750717026"
+        },
+        "1377740234": {
+            "type": "string",
+            "title": "3) Número de identificación comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1377740234"
+        },
+        "-1623906765": {
+            "type": "string",
+            "title": "3) Lugar de expedición Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1623906765"
+        },
+        "-1154295639": {
+            "type": "string",
+            "title": "3) Nombre o razón social Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1154295639"
+        },
+        "-1257513687": {
+            "type": "string",
+            "title": "2) Opción C.C. Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1257513687"
+        },
+        "-924265980": {
+            "type": "string",
+            "title": "2) Opción NIT Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-924265980"
+        },
+        "1332333621": {
+            "type": "string",
+            "title": "2) Opción C.E. Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1332333621"
+        },
+        "2047328829": {
+            "type": "string",
+            "title": "2) Número de identificación comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/2047328829"
+        },
+        "-158542201": {
+            "type": "string",
+            "title": "2) Lugar de expedición Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-158542201"
+        },
+        "1559976521": {
+            "type": "string",
+            "title": "2) Nombre o razón social Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1559976521"
+        },
+        "486205631": {
+            "type": "string",
+            "title": "1) Opción C.C. Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/486205631"
+        },
+        "1427465378": {
+            "type": "string",
+            "title": "1) Opción NIT Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1427465378"
+        },
+        "-1315096799": {
+            "type": "string",
+            "title": "1) Opción C.E. Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1315096799"
+        },
+        "1163822514": {
+            "type": "string",
+            "title": "1) Número de identificación comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1163822514"
+        },
+        "-192532578": {
+            "type": "string",
+            "title": "1) Lugar de expedición Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-192532578"
+        },
+        "1079333496": {
+            "type": "string",
+            "title": "1) Nombre o razón social Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1079333496"
+        },
+        "315994960": {
+            "type": "string",
+            "title": "Opción-Si: ¿La torre hace parte del cerramiento?",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/315994960"
+        },
+        "-530339328": {
+            "type": "string",
+            "title": "Opción- No: ¿La torre hace parte del cerramiento?",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-530339328"
+        },
+        "1909808037": {
+            "type": "string",
+            "title": "Costo Apartamento / Casa",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1909808037"
+        },
+        "-618998756": {
+            "type": "string",
+            "title": "Costo Garajes",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-618998756"
+        },
+        "-1197388751": {
+            "type": "string",
+            "title": "Descuento comercial",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1197388751"
+        },
+        "661823531": {
+            "type": "string",
+            "title": "Costo Reformas",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/661823531"
+        },
+        "-1477911755": {
+            "type": "string",
+            "title": "Subtotal",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1477911755"
+        },
+        "412050321": {
+            "type": "string",
+            "title": "Costo IVA",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/412050321"
+        },
+        "2039386733": {
+            "type": "string",
+            "title": "Total",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/2039386733"
+        },
+        "-1658907045": {
+            "type": "string",
+            "title": "4) Código Garaje",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1658907045"
+        },
+        "-531881706": {
+            "type": "string",
+            "title": "4) Garaje Cubierto",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-531881706"
+        },
+        "-1454087366": {
+            "type": "string",
+            "title": "4) Garaje Descubierto",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1454087366"
+        },
+        "-224921782": {
+            "type": "string",
+            "title": "4) Garaje Semi-descubierto",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-224921782"
+        },
+        "1101684861": {
+            "type": "string",
+            "title": "4) Garaje Doble",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1101684861"
+        },
+        "54291448": {
+            "type": "string",
+            "title": "4) Garaje Sencillo",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/54291448"
+        },
+        "1570851077": {
+            "type": "string",
+            "title": "4) Garaje servidumbre",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1570851077"
+        },
+        "-1607343281": {
+            "type": "string",
+            "title": "4) Garaje no aplica",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1607343281"
+        },
+        "-833761712": {
+            "type": "string",
+            "title": "5) Código Garaje",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-833761712"
+        },
+        "715479779": {
+            "type": "string",
+            "title": "5) Garaje Cubierto",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/715479779"
+        },
+        "80881480": {
+            "type": "string",
+            "title": "5) Garaje Descubierto",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/80881480"
+        },
+        "1080182146": {
+            "type": "string",
+            "title": "5) Garaje Semi-descubierto",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1080182146"
+        },
+        "-685982642": {
+            "type": "string",
+            "title": "5) Garaje Doble",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-685982642"
+        },
+        "1402715115": {
+            "type": "string",
+            "title": "5) Garaje Sencillo",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1402715115"
+        },
+        "-1999022635": {
+            "type": "string",
+            "title": "5) Garaje servidumbre",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1999022635"
+        },
+        "768195059": {
+            "type": "string",
+            "title": "5) Garaje no aplica",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/768195059"
+        },
+        "1547797000": {
+            "type": "string",
+            "title": "2) Código depósito",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1547797000"
+        },
+        "-848955847": {
+            "type": "string",
+            "title": "2) Depósito en piso",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-848955847"
+        },
+        "1521746935": {
+            "type": "string",
+            "title": "2) Número de piso Depósito",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1521746935"
+        },
+        "1510414155": {
+            "type": "string",
+            "title": "2) Depósito en Cubierta",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1510414155"
+        },
+        "-238485960": {
+            "type": "string",
+            "title": "2) Depósito en sótano",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-238485960"
+        },
+        "585268654": {
+            "type": "string",
+            "title": "2) Depósito no aplica",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/585268654"
+        },
+        "-2056375840": {
+            "type": "string",
+            "title": "1) Código depósito",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-2056375840"
+        },
+        "1914274990": {
+            "type": "string",
+            "title": "1) Depósito en piso",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1914274990"
+        },
+        "1766953422": {
+            "type": "string",
+            "title": "1) Número de piso Depósito",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1766953422"
+        },
+        "1511871763": {
+            "type": "string",
+            "title": "1) Depósito en Cubierta",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1511871763"
+        },
+        "-1724131319": {
+            "type": "string",
+            "title": "1) Depósito en sótano",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1724131319"
+        },
+        "-1083448252": {
+            "type": "string",
+            "title": "1) Depósito no aplica",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1083448252"
+        },
+        "-838386448": {
+            "type": "string",
+            "title": "2) Código Garaje",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-838386448"
+        },
+        "444896955": {
+            "type": "string",
+            "title": "2) Garaje Cubierto",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/444896955"
+        },
+        "-582138652": {
+            "type": "string",
+            "title": "2) Garaje Descubierto",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-582138652"
+        },
+        "672153276": {
+            "type": "string",
+            "title": "2) Garaje Semi-descubierto",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/672153276"
+        },
+        "-13701528": {
+            "type": "string",
+            "title": "2) Garaje Doble",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-13701528"
+        },
+        "1771204191": {
+            "type": "string",
+            "title": "2) Garaje Sencillo",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1771204191"
+        },
+        "-1990312334": {
+            "type": "string",
+            "title": "2) Garaje servidumbre",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1990312334"
+        },
+        "-154616325": {
+            "type": "string",
+            "title": "2) Garaje no aplica",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-154616325"
+        },
+        "-784887205": {
+            "type": "string",
+            "title": "Área de balcón",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-784887205"
+        },
+        "373349238": {
+            "type": "string",
+            "title": "Área de terraza",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/373349238"
+        },
+        "730118544": {
+            "type": "string",
+            "title": "Área de patio",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/730118544"
+        },
+        "-1378460391": {
+            "type": "string",
+            "title": "3) Código Garaje",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1378460391"
+        },
+        "-504284071": {
+            "type": "string",
+            "title": "3) Garaje Cubierto",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-504284071"
+        },
+        "1965465741": {
+            "type": "string",
+            "title": "3) Garaje Descubierto",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1965465741"
+        },
+        "-1372378210": {
+            "type": "string",
+            "title": "3) Garaje Semi-descubierto",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1372378210"
+        },
+        "-1958010995": {
+            "type": "string",
+            "title": "3) Garaje Doble",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1958010995"
+        },
+        "-1399133714": {
+            "type": "string",
+            "title": "3) Garaje Sencillo",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1399133714"
+        },
+        "-973591042": {
+            "type": "string",
+            "title": "3) Garaje servidumbre",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-973591042"
+        },
+        "-1118990598": {
+            "type": "string",
+            "title": "3) Garaje no aplica",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1118990598"
+        },
+        "-134718392": {
+            "type": "string",
+            "title": "1) Código Garaje",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-134718392"
+        },
+        "-26717393": {
+            "type": "string",
+            "title": "1) Garaje Cubierto",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-26717393"
+        },
+        "901250088": {
+            "type": "string",
+            "title": "1) Garaje Descubierto",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/901250088"
+        },
+        "735893103": {
+            "type": "string",
+            "title": "1) Garaje Semi-descubierto",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/735893103"
+        },
+        "-610667328": {
+            "type": "string",
+            "title": "1) Garaje Doble",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-610667328"
+        },
+        "-713653231": {
+            "type": "string",
+            "title": "1) Garaje Sencillo",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-713653231"
+        },
+        "1296489578": {
+            "type": "string",
+            "title": "1) Garaje servidumbre",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1296489578"
+        },
+        "-326596082": {
+            "type": "string",
+            "title": "1) Garaje no aplica",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-326596082"
+        },
+        "700435973": {
+            "type": "string",
+            "title": "Área Construida",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/700435973"
+        },
+        "-1828968607": {
+            "type": "string",
+            "title": "Área privada",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1828968607"
+        },
+        "2058972551": {
+            "type": "string",
+            "title": "Interior / Torre",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/2058972551"
+        },
+        "1828320647": {
+            "type": "string",
+            "title": "Unidad",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1828320647"
+        },
+        "-315573703": {
+            "type": "string",
+            "title": "Opción: Exterior",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-315573703"
+        },
+        "-1352797022": {
+            "type": "string",
+            "title": "Opción: Interior",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1352797022"
+        },
+        "-13539882": {
+            "type": "string",
+            "title": "Opción: Esquinero",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-13539882"
+        },
+        "-28178237": {
+            "type": "string",
+            "title": "Opción: Medianero",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-28178237"
+        },
+        "-667790570": {
+            "type": "string",
+            "title": "Sociedad vendedora",
+            "description": "Sociedad vendedora",
+            "x-ms-property-name-alias": "dynamicFileSchema/-667790570"
+        },
+        "-773944305": {
+            "type": "string",
+            "title": "Macroproyecto",
+            "description": "Macroproyecto",
+            "x-ms-property-name-alias": "dynamicFileSchema/-773944305"
+        },
+        "-1235853270": {
+            "type": "string",
+            "title": "Número de boletín",
+            "description": "Número de boletín",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1235853270"
+        },
+        "-929733395": {
+            "type": "string",
+            "title": "Total Ingresos mensuales",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-929733395"
+        },
+        "2053119847": {
+            "type": "string",
+            "title": "5) Opción-Empleado: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/2053119847"
+        },
+        "-9367668": {
+            "type": "string",
+            "title": "5) Opción-Independiente: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-9367668"
+        },
+        "-1304073823": {
+            "type": "string",
+            "title": "5) Opción-Pensionado: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1304073823"
+        },
+        "-1813091101": {
+            "type": "string",
+            "title": "5) Opción-Hogar: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1813091101"
+        },
+        "-1424337299": {
+            "type": "string",
+            "title": "5) Entidad: Actividad Económica",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1424337299"
+        },
+        "-228619442": {
+            "type": "string",
+            "title": "5) Ingresos mensuales: comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-228619442"
+        },
+        "684800509": {
+            "type": "string",
+            "title": "4) Opción-Empleado: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/684800509"
+        },
+        "-419093259": {
+            "type": "string",
+            "title": "4) Opción-Independiente: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-419093259"
+        },
+        "389386139": {
+            "type": "string",
+            "title": "4) Opción-Pensionado: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/389386139"
+        },
+        "-1695229111": {
+            "type": "string",
+            "title": "4) Opción-Hogar: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1695229111"
+        },
+        "-125471349": {
+            "type": "string",
+            "title": "4) Entidad: Actividad Económica",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-125471349"
+        },
+        "-1463570716": {
+            "type": "string",
+            "title": "4) Ingresos mensuales: comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1463570716"
+        },
+        "1703291193": {
+            "type": "string",
+            "title": "3) Opción-Empleado: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1703291193"
+        },
+        "-1274084603": {
+            "type": "string",
+            "title": "3) Opción-Independiente: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1274084603"
+        },
+        "332033046": {
+            "type": "string",
+            "title": "3) Opción-Pensionado: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/332033046"
+        },
+        "-772398091": {
+            "type": "string",
+            "title": "3) Opción-Hogar: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-772398091"
+        },
+        "-839305676": {
+            "type": "string",
+            "title": "3) Entidad: Actividad Económica",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-839305676"
+        },
+        "-1274004355": {
+            "type": "string",
+            "title": "3) Ingresos mensuales: comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1274004355"
+        },
+        "1362248662": {
+            "type": "string",
+            "title": "1) Opción-Empleado: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1362248662"
+        },
+        "526297258": {
+            "type": "string",
+            "title": "1) Opción-Independiente: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/526297258"
+        },
+        "-642124189": {
+            "type": "string",
+            "title": "1) Opción-Pensionado: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-642124189"
+        },
+        "417607407": {
+            "type": "string",
+            "title": "1) Opción-Hogar: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/417607407"
+        },
+        "-2023849964": {
+            "type": "string",
+            "title": "1) Entidad: Actividad Económica",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-2023849964"
+        },
+        "-515225077": {
+            "type": "string",
+            "title": "1) Ingresos mensuales: comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-515225077"
+        },
+        "1957598970": {
+            "type": "string",
+            "title": "2) Opción-Empleado: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1957598970"
+        },
+        "1395625100": {
+            "type": "string",
+            "title": "2) Opción-Independiente: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1395625100"
+        },
+        "864636513": {
+            "type": "string",
+            "title": "2) Opción-Pensionado: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/864636513"
+        },
+        "579566091": {
+            "type": "string",
+            "title": "2) Opción-Hogar: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/579566091"
+        },
+        "1189569629": {
+            "type": "string",
+            "title": "2) Entidad: Actividad Económica",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1189569629"
+        },
+        "-1374620292": {
+            "type": "string",
+            "title": "2) Ingresos mensuales: comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1374620292"
+        },
+        "-525399073": {
+            "type": "string",
+            "title": "Opción-Si: Afectación de vivienda familiar",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-525399073"
+        },
+        "252793215": {
+            "type": "string",
+            "title": "Opción-No: Afectación de vivienda falimiar",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/252793215"
+        },
+        "-2136480132": {
+            "type": "string",
+            "title": "Nombre cónyuge",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-2136480132"
+        },
+        "-712810121": {
+            "type": "string",
+            "title": "Número de documento cónyuge",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-712810121"
+        },
+        "-239803086": {
+            "type": "string",
+            "title": "Ciudad de expedición de documento cónyuge",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-239803086"
+        },
+        "-109433372": {
+            "type": "string",
+            "title": "5) Opción-Soltero: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-109433372"
+        },
+        "-596258816": {
+            "type": "string",
+            "title": "5) Opción-Casado: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-596258816"
+        },
+        "-25017471": {
+            "type": "string",
+            "title": "5) Opción-Divorciado: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-25017471"
+        },
+        "-229695166": {
+            "type": "string",
+            "title": "5) Opción-Unión Libre: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-229695166"
+        },
+        "870642911": {
+            "type": "string",
+            "title": "5) Opción-Viudo: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/870642911"
+        },
+        "-2040186553": {
+            "type": "string",
+            "title": "5) Opción-Sociedad Marital Vigente: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-2040186553"
+        },
+        "-1497800844": {
+            "type": "string",
+            "title": "5) Opción-Sociedad Marital Disuelta: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1497800844"
+        },
+        "1015729924": {
+            "type": "string",
+            "title": "5) Año Liquidación sociedad marital Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1015729924"
+        },
+        "1141231070": {
+            "type": "string",
+            "title": "5) Mes liquidación sociedad marital Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1141231070"
+        },
+        "697277203": {
+            "type": "string",
+            "title": "5) Día liquidación sociedad marital Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/697277203"
+        },
+        "-2023236734": {
+            "type": "string",
+            "title": "5) Notaría o Juzgado de liquidación sociedad marital Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-2023236734"
+        },
+        "1686252655": {
+            "type": "string",
+            "title": "5) Número de escritura pública liquidación sociedad marital Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1686252655"
+        },
+        "256560046": {
+            "type": "string",
+            "title": "4) Opción-Soltero: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/256560046"
+        },
+        "809358783": {
+            "type": "string",
+            "title": "4) Opción-Casado: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/809358783"
+        },
+        "1596900088": {
+            "type": "string",
+            "title": "4) Opción-Divorciado: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1596900088"
+        },
+        "81348468": {
+            "type": "string",
+            "title": "4) Opción-Unión Libre: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/81348468"
+        },
+        "-1838673763": {
+            "type": "string",
+            "title": "4) Opción-Viudo: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1838673763"
+        },
+        "-1382928266": {
+            "type": "string",
+            "title": "4) Opción-Sociedad Marital Vigente: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1382928266"
+        },
+        "2000074394": {
+            "type": "string",
+            "title": "4) Opción-Sociedad Marital Disuelta: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/2000074394"
+        },
+        "-1850171751": {
+            "type": "string",
+            "title": "4) Año Liquidación sociedad marital Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1850171751"
+        },
+        "-1355189108": {
+            "type": "string",
+            "title": "4) Mes liquidación sociedad marital Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1355189108"
+        },
+        "2028907025": {
+            "type": "string",
+            "title": "4) Día liquidación sociedad marital Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/2028907025"
+        },
+        "-1088774946": {
+            "type": "string",
+            "title": "4) Notaría o Juzgado de liquidación sociedad marital Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1088774946"
+        },
+        "1356841125": {
+            "type": "string",
+            "title": "4) Número de escritura pública liquidación sociedad marital Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1356841125"
+        },
+        "-720286785": {
+            "type": "string",
+            "title": "3) Opción-Soltero: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-720286785"
+        },
+        "540715305": {
+            "type": "string",
+            "title": "3) Opción-Casado: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/540715305"
+        },
+        "-539284108": {
+            "type": "string",
+            "title": "3) Opción-Divorciado: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-539284108"
+        },
+        "198131144": {
+            "type": "string",
+            "title": "3) Opción-Unión Libre: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/198131144"
+        },
+        "-2130849716": {
+            "type": "string",
+            "title": "3) Opción-Viudo: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-2130849716"
+        },
+        "1454518533": {
+            "type": "string",
+            "title": "3) Opción-Sociedad Marital Vigente: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1454518533"
+        },
+        "-746569757": {
+            "type": "string",
+            "title": "3) Opción-Sociedad Marital Disuelta: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-746569757"
+        },
+        "1154500121": {
+            "type": "string",
+            "title": "3) Año Liquidación sociedad marital Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1154500121"
+        },
+        "1967615956": {
+            "type": "string",
+            "title": "3) Mes liquidación sociedad marital Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1967615956"
+        },
+        "1615333509": {
+            "type": "string",
+            "title": "3) Día liquidación sociedad marital Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1615333509"
+        },
+        "231657725": {
+            "type": "string",
+            "title": "3) Notaría o Juzgado de liquidación sociedad marital Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/231657725"
+        },
+        "-466740732": {
+            "type": "string",
+            "title": "3) Número de escritura pública liquidación sociedad marital Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-466740732"
+        },
+        "-1150050291": {
+            "type": "string",
+            "title": "2) Opción-Soltero: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1150050291"
+        },
+        "1685315638": {
+            "type": "string",
+            "title": "2) Opción-Casado: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1685315638"
+        },
+        "-381636553": {
+            "type": "string",
+            "title": "2) Opción-Divorciado: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-381636553"
+        },
+        "-1634481633": {
+            "type": "string",
+            "title": "2) Opción-Unión Libre: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1634481633"
+        },
+        "1952590028": {
+            "type": "string",
+            "title": "2) Opción-Viudo: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1952590028"
+        },
+        "1785078454": {
+            "type": "string",
+            "title": "2) Opción-Sociedad Marital Vigente: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1785078454"
+        },
+        "-286897017": {
+            "type": "string",
+            "title": "2) Opción-Sociedad Marital Disuelta: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-286897017"
+        },
+        "895248857": {
+            "type": "string",
+            "title": "2) Año Liquidación sociedad marital Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/895248857"
+        },
+        "263044403": {
+            "type": "string",
+            "title": "2) Mes liquidación sociedad marital Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/263044403"
+        },
+        "-1542747244": {
+            "type": "string",
+            "title": "2) Día liquidación sociedad marital Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1542747244"
+        },
+        "-51077996": {
+            "type": "string",
+            "title": "2) Notaría o Juzgado de liquidación sociedad marital Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-51077996"
+        },
+        "1042952877": {
+            "type": "string",
+            "title": "2) Número de escritura pública liquidación sociedad marital Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1042952877"
+        },
+        "-353035383": {
+            "type": "string",
+            "title": "1) Opción-Soltero: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-353035383"
+        },
+        "871348371": {
+            "type": "string",
+            "title": "1) Opción-Casado: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/871348371"
+        },
+        "99529392": {
+            "type": "string",
+            "title": "1) Opción-Divorciado: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/99529392"
+        },
+        "1626040608": {
+            "type": "string",
+            "title": "1) Opción-Unión Libre: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1626040608"
+        },
+        "-1961643849": {
+            "type": "string",
+            "title": "1) Opción-Viudo: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1961643849"
+        },
+        "-1169941597": {
+            "type": "string",
+            "title": "1) Opción-Sociedad Marital Vigente: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1169941597"
+        },
+        "-2090685103": {
+            "type": "string",
+            "title": "1) Opción-Sociedad Marital Disuelta: Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-2090685103"
+        },
+        "-772012268": {
+            "type": "string",
+            "title": "1) Año Liquidación sociedad marital Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-772012268"
+        },
+        "1799029971": {
+            "type": "string",
+            "title": "1) Mes liquidación sociedad marital Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1799029971"
+        },
+        "1918664559": {
+            "type": "string",
+            "title": "1) Día liquidación sociedad marital Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1918664559"
+        },
+        "-1121299549": {
+            "type": "string",
+            "title": "1) Notaría o Juzgado de liquidación sociedad marital Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1121299549"
+        },
+        "1467151266": {
+            "type": "string",
+            "title": "1) Número de escritura pública liquidación sociedad marital Comprador",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1467151266"
+        },
+        "765272719": {
+            "type": "string",
+            "title": "Número de boletín",
+            "description": "Número de boletín",
+            "x-ms-property-name-alias": "dynamicFileSchema/765272719"
+        },
+        "-1766907321": {
+            "type": "string",
+            "title": "Precio Total",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1766907321"
+        },
+        "-631943658": {
+            "type": "string",
+            "title": "1) Concepto saldo",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-631943658"
+        },
+        "-1580210065": {
+            "type": "string",
+            "title": "1) Total Saldo",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1580210065"
+        },
+        "-1824887101": {
+            "type": "string",
+            "title": "1) Entidad Saldo",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1824887101"
+        },
+        "-238567276": {
+            "type": "string",
+            "title": "2) Concepto Saldo",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-238567276"
+        },
+        "-2022391312": {
+            "type": "string",
+            "title": "2) Total Saldo",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-2022391312"
+        },
+        "1176611672": {
+            "type": "string",
+            "title": "2) Entidad Saldo",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1176611672"
+        },
+        "585035971": {
+            "type": "string",
+            "title": "3) Concepto Saldo",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/585035971"
+        },
+        "422693063": {
+            "type": "string",
+            "title": "3) Total Saldo",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/422693063"
+        },
+        "-1804382704": {
+            "type": "string",
+            "title": "3) Entidad Saldo",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1804382704"
+        },
+        "1374969329": {
+            "type": "string",
+            "title": "Total Cuota Inicial",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1374969329"
+        },
+        "457849273": {
+            "type": "string",
+            "title": "45) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/457849273"
+        },
+        "-1163699590": {
+            "type": "string",
+            "title": "45) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1163699590"
+        },
+        "1304433180": {
+            "type": "string",
+            "title": "45) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1304433180"
+        },
+        "179397890": {
+            "type": "string",
+            "title": "45) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/179397890"
+        },
+        "1340503535": {
+            "type": "string",
+            "title": "45) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1340503535"
+        },
+        "-1521538511": {
+            "type": "string",
+            "title": "45) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1521538511"
+        },
+        "-2131853362": {
+            "type": "string",
+            "title": "44) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-2131853362"
+        },
+        "1260945683": {
+            "type": "string",
+            "title": "44) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1260945683"
+        },
+        "613102338": {
+            "type": "string",
+            "title": "44) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/613102338"
+        },
+        "487517366": {
+            "type": "string",
+            "title": "44) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/487517366"
+        },
+        "2039387512": {
+            "type": "string",
+            "title": "44) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/2039387512"
+        },
+        "1975798643": {
+            "type": "string",
+            "title": "44) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1975798643"
+        },
+        "464625479": {
+            "type": "string",
+            "title": "43) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/464625479"
+        },
+        "-958099204": {
+            "type": "string",
+            "title": "43) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-958099204"
+        },
+        "1607765336": {
+            "type": "string",
+            "title": "43) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1607765336"
+        },
+        "-764381144": {
+            "type": "string",
+            "title": "43) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-764381144"
+        },
+        "-375162797": {
+            "type": "string",
+            "title": "43) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-375162797"
+        },
+        "1398784427": {
+            "type": "string",
+            "title": "43) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1398784427"
+        },
+        "-317883811": {
+            "type": "string",
+            "title": "42) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-317883811"
+        },
+        "-1759908465": {
+            "type": "string",
+            "title": "42) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1759908465"
+        },
+        "-350030079": {
+            "type": "string",
+            "title": "42) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-350030079"
+        },
+        "1584490644": {
+            "type": "string",
+            "title": "42) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1584490644"
+        },
+        "1422920325": {
+            "type": "string",
+            "title": "42) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1422920325"
+        },
+        "-686367058": {
+            "type": "string",
+            "title": "42) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-686367058"
+        },
+        "-1973204689": {
+            "type": "string",
+            "title": "41) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1973204689"
+        },
+        "-221219287": {
+            "type": "string",
+            "title": "41) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-221219287"
+        },
+        "1834870252": {
+            "type": "string",
+            "title": "41) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1834870252"
+        },
+        "150494432": {
+            "type": "string",
+            "title": "41) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/150494432"
+        },
+        "1497918589": {
+            "type": "string",
+            "title": "41) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1497918589"
+        },
+        "1244908938": {
+            "type": "string",
+            "title": "41) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1244908938"
+        },
+        "889303820": {
+            "type": "string",
+            "title": "40) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/889303820"
+        },
+        "878434028": {
+            "type": "string",
+            "title": "40) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/878434028"
+        },
+        "-1852402688": {
+            "type": "string",
+            "title": "40) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1852402688"
+        },
+        "406647768": {
+            "type": "string",
+            "title": "40) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/406647768"
+        },
+        "540951939": {
+            "type": "string",
+            "title": "40) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/540951939"
+        },
+        "-186070870": {
+            "type": "string",
+            "title": "40) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-186070870"
+        },
+        "-1023317355": {
+            "type": "string",
+            "title": "39) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1023317355"
+        },
+        "682566618": {
+            "type": "string",
+            "title": "39) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/682566618"
+        },
+        "-1522088564": {
+            "type": "string",
+            "title": "39) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1522088564"
+        },
+        "75016790": {
+            "type": "string",
+            "title": "39) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/75016790"
+        },
+        "331424837": {
+            "type": "string",
+            "title": "39) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/331424837"
+        },
+        "-1050533702": {
+            "type": "string",
+            "title": "39) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1050533702"
+        },
+        "-1783181127": {
+            "type": "string",
+            "title": "38) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1783181127"
+        },
+        "-1571034910": {
+            "type": "string",
+            "title": "38) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1571034910"
+        },
+        "-1828594620": {
+            "type": "string",
+            "title": "38) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1828594620"
+        },
+        "1950125243": {
+            "type": "string",
+            "title": "38) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1950125243"
+        },
+        "1067448984": {
+            "type": "string",
+            "title": "38) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1067448984"
+        },
+        "226801951": {
+            "type": "string",
+            "title": "38) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/226801951"
+        },
+        "-2034335164": {
+            "type": "string",
+            "title": "37) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-2034335164"
+        },
+        "-687059393": {
+            "type": "string",
+            "title": "37) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-687059393"
+        },
+        "181097256": {
+            "type": "string",
+            "title": "37) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/181097256"
+        },
+        "2096899153": {
+            "type": "string",
+            "title": "37) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/2096899153"
+        },
+        "-1943910015": {
+            "type": "string",
+            "title": "37) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1943910015"
+        },
+        "689649294": {
+            "type": "string",
+            "title": "37) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/689649294"
+        },
+        "1900317799": {
+            "type": "string",
+            "title": "36) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1900317799"
+        },
+        "-1411686562": {
+            "type": "string",
+            "title": "36) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1411686562"
+        },
+        "42647688": {
+            "type": "string",
+            "title": "36) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/42647688"
+        },
+        "2024211597": {
+            "type": "string",
+            "title": "36) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/2024211597"
+        },
+        "-822426723": {
+            "type": "string",
+            "title": "36) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-822426723"
+        },
+        "-677344532": {
+            "type": "string",
+            "title": "36) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-677344532"
+        },
+        "658958084": {
+            "type": "string",
+            "title": "35) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/658958084"
+        },
+        "-218445374": {
+            "type": "string",
+            "title": "35) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-218445374"
+        },
+        "-2084600113": {
+            "type": "string",
+            "title": "35) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-2084600113"
+        },
+        "46812018": {
+            "type": "string",
+            "title": "35) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/46812018"
+        },
+        "-1573194378": {
+            "type": "string",
+            "title": "35) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1573194378"
+        },
+        "317161664": {
+            "type": "string",
+            "title": "35) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/317161664"
+        },
+        "-167334214": {
+            "type": "string",
+            "title": "34) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-167334214"
+        },
+        "1997228400": {
+            "type": "string",
+            "title": "34) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1997228400"
+        },
+        "-1289270112": {
+            "type": "string",
+            "title": "34) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1289270112"
+        },
+        "-519786136": {
+            "type": "string",
+            "title": "34) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-519786136"
+        },
+        "945585838": {
+            "type": "string",
+            "title": "34) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/945585838"
+        },
+        "1153872032": {
+            "type": "string",
+            "title": "34) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1153872032"
+        },
+        "-2048134169": {
+            "type": "string",
+            "title": "33) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-2048134169"
+        },
+        "1268196455": {
+            "type": "string",
+            "title": "33) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1268196455"
+        },
+        "-989333215": {
+            "type": "string",
+            "title": "33) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-989333215"
+        },
+        "-1011372836": {
+            "type": "string",
+            "title": "1) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1011372836"
+        },
+        "-781568007": {
+            "type": "string",
+            "title": "33) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-781568007"
+        },
+        "-1945605313": {
+            "type": "string",
+            "title": "33) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1945605313"
+        },
+        "1331097008": {
+            "type": "string",
+            "title": "32) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1331097008"
+        },
+        "-368773376": {
+            "type": "string",
+            "title": "32) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-368773376"
+        },
+        "531153546": {
+            "type": "string",
+            "title": "32) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/531153546"
+        },
+        "-1725444383": {
+            "type": "string",
+            "title": "32) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1725444383"
+        },
+        "-155840285": {
+            "type": "string",
+            "title": "32) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-155840285"
+        },
+        "743069825": {
+            "type": "string",
+            "title": "32) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/743069825"
+        },
+        "681936001": {
+            "type": "string",
+            "title": "31) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/681936001"
+        },
+        "-1801676991": {
+            "type": "string",
+            "title": "31) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1801676991"
+        },
+        "-13079608": {
+            "type": "string",
+            "title": "31) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-13079608"
+        },
+        "525064723": {
+            "type": "string",
+            "title": "31) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/525064723"
+        },
+        "2136591093": {
+            "type": "string",
+            "title": "31) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/2136591093"
+        },
+        "-1936360161": {
+            "type": "string",
+            "title": "31) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1936360161"
+        },
+        "577333053": {
+            "type": "string",
+            "title": "30) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/577333053"
+        },
+        "-538126830": {
+            "type": "string",
+            "title": "30) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-538126830"
+        },
+        "-879635870": {
+            "type": "string",
+            "title": "30) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-879635870"
+        },
+        "1338049256": {
+            "type": "string",
+            "title": "30) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1338049256"
+        },
+        "-864278691": {
+            "type": "string",
+            "title": "30) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-864278691"
+        },
+        "1804722715": {
+            "type": "string",
+            "title": "30) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1804722715"
+        },
+        "1676379074": {
+            "type": "string",
+            "title": "29) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1676379074"
+        },
+        "299497949": {
+            "type": "string",
+            "title": "29) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/299497949"
+        },
+        "264884562": {
+            "type": "string",
+            "title": "29) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/264884562"
+        },
+        "-1390716683": {
+            "type": "string",
+            "title": "29) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1390716683"
+        },
+        "222721163": {
+            "type": "string",
+            "title": "29) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/222721163"
+        },
+        "1557510346": {
+            "type": "string",
+            "title": "29) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1557510346"
+        },
+        "1910264031": {
+            "type": "string",
+            "title": "27) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1910264031"
+        },
+        "-882408641": {
+            "type": "string",
+            "title": "27) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-882408641"
+        },
+        "1937627809": {
+            "type": "string",
+            "title": "27) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1937627809"
+        },
+        "-1064559685": {
+            "type": "string",
+            "title": "27) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1064559685"
+        },
+        "776679849": {
+            "type": "string",
+            "title": "27) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/776679849"
+        },
+        "1945416556": {
+            "type": "string",
+            "title": "27) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1945416556"
+        },
+        "-817040365": {
+            "type": "string",
+            "title": "28) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-817040365"
+        },
+        "-192919343": {
+            "type": "string",
+            "title": "28) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-192919343"
+        },
+        "-650751451": {
+            "type": "string",
+            "title": "28) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-650751451"
+        },
+        "-1681350231": {
+            "type": "string",
+            "title": "28) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1681350231"
+        },
+        "525986716": {
+            "type": "string",
+            "title": "28) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/525986716"
+        },
+        "906952595": {
+            "type": "string",
+            "title": "28) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/906952595"
+        },
+        "640701987": {
+            "type": "string",
+            "title": "26) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/640701987"
+        },
+        "-1029868571": {
+            "type": "string",
+            "title": "26) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1029868571"
+        },
+        "-2133851858": {
+            "type": "string",
+            "title": "26) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-2133851858"
+        },
+        "-1795515782": {
+            "type": "string",
+            "title": "26) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1795515782"
+        },
+        "-1877846648": {
+            "type": "string",
+            "title": "26) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1877846648"
+        },
+        "-1686426866": {
+            "type": "string",
+            "title": "26) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1686426866"
+        },
+        "966936527": {
+            "type": "string",
+            "title": "25) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/966936527"
+        },
+        "322785924": {
+            "type": "string",
+            "title": "25) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/322785924"
+        },
+        "-325363972": {
+            "type": "string",
+            "title": "25) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-325363972"
+        },
+        "1366107766": {
+            "type": "string",
+            "title": "25) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1366107766"
+        },
+        "-1083993884": {
+            "type": "string",
+            "title": "25) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1083993884"
+        },
+        "-512682025": {
+            "type": "string",
+            "title": "25) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-512682025"
+        },
+        "-2018993038": {
+            "type": "string",
+            "title": "24) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-2018993038"
+        },
+        "490146720": {
+            "type": "string",
+            "title": "24) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/490146720"
+        },
+        "1108018685": {
+            "type": "string",
+            "title": "24) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1108018685"
+        },
+        "361014290": {
+            "type": "string",
+            "title": "24) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/361014290"
+        },
+        "-1512827074": {
+            "type": "string",
+            "title": "24) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1512827074"
+        },
+        "-17011808": {
+            "type": "string",
+            "title": "24) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-17011808"
+        },
+        "1868943330": {
+            "type": "string",
+            "title": "23) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1868943330"
+        },
+        "1734266022": {
+            "type": "string",
+            "title": "23) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1734266022"
+        },
+        "1436170753": {
+            "type": "string",
+            "title": "23) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1436170753"
+        },
+        "2068843235": {
+            "type": "string",
+            "title": "23) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/2068843235"
+        },
+        "-533349983": {
+            "type": "string",
+            "title": "23) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-533349983"
+        },
+        "-1093160445": {
+            "type": "string",
+            "title": "23) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1093160445"
+        },
+        "761269883": {
+            "type": "string",
+            "title": "22) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/761269883"
+        },
+        "-879324820": {
+            "type": "string",
+            "title": "22) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-879324820"
+        },
+        "1239371930": {
+            "type": "string",
+            "title": "22) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1239371930"
+        },
+        "1889606661": {
+            "type": "string",
+            "title": "22) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1889606661"
+        },
+        "911823013": {
+            "type": "string",
+            "title": "22) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/911823013"
+        },
+        "838039722": {
+            "type": "string",
+            "title": "22) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/838039722"
+        },
+        "-75835626": {
+            "type": "string",
+            "title": "21) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-75835626"
+        },
+        "-780801259": {
+            "type": "string",
+            "title": "21) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-780801259"
+        },
+        "-259146683": {
+            "type": "string",
+            "title": "21) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-259146683"
+        },
+        "205303330": {
+            "type": "string",
+            "title": "21) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/205303330"
+        },
+        "-1475137362": {
+            "type": "string",
+            "title": "21) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1475137362"
+        },
+        "-1044896646": {
+            "type": "string",
+            "title": "21) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1044896646"
+        },
+        "6336016": {
+            "type": "string",
+            "title": "20) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/6336016"
+        },
+        "99149507": {
+            "type": "string",
+            "title": "20) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/99149507"
+        },
+        "662134539": {
+            "type": "string",
+            "title": "20) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/662134539"
+        },
+        "-2127529718": {
+            "type": "string",
+            "title": "20) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-2127529718"
+        },
+        "-560100851": {
+            "type": "string",
+            "title": "20) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-560100851"
+        },
+        "2079785413": {
+            "type": "string",
+            "title": "20) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/2079785413"
+        },
+        "2130889683": {
+            "type": "string",
+            "title": "19) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/2130889683"
+        },
+        "-1029870761": {
+            "type": "string",
+            "title": "19) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1029870761"
+        },
+        "1214853914": {
+            "type": "string",
+            "title": "19) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1214853914"
+        },
+        "-839839652": {
+            "type": "string",
+            "title": "19) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-839839652"
+        },
+        "-589691677": {
+            "type": "string",
+            "title": "19) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-589691677"
+        },
+        "-1122536125": {
+            "type": "string",
+            "title": "19) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1122536125"
+        },
+        "-1845168289": {
+            "type": "string",
+            "title": "18) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1845168289"
+        },
+        "1778906119": {
+            "type": "string",
+            "title": "18) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1778906119"
+        },
+        "443973647": {
+            "type": "string",
+            "title": "18) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/443973647"
+        },
+        "339046210": {
+            "type": "string",
+            "title": "18) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/339046210"
+        },
+        "-2021613511": {
+            "type": "string",
+            "title": "18) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-2021613511"
+        },
+        "220567545": {
+            "type": "string",
+            "title": "18) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/220567545"
+        },
+        "1333805732": {
+            "type": "string",
+            "title": "17) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1333805732"
+        },
+        "-210959106": {
+            "type": "string",
+            "title": "17) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-210959106"
+        },
+        "-767695375": {
+            "type": "string",
+            "title": "17) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-767695375"
+        },
+        "-1319494422": {
+            "type": "string",
+            "title": "17) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1319494422"
+        },
+        "-1654990644": {
+            "type": "string",
+            "title": "17) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1654990644"
+        },
+        "1886601029": {
+            "type": "string",
+            "title": "17) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1886601029"
+        },
+        "1658270526": {
+            "type": "string",
+            "title": "16) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1658270526"
+        },
+        "566312027": {
+            "type": "string",
+            "title": "16) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/566312027"
+        },
+        "-892116690": {
+            "type": "string",
+            "title": "16) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-892116690"
+        },
+        "2129668647": {
+            "type": "string",
+            "title": "16) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/2129668647"
+        },
+        "1628743356": {
+            "type": "string",
+            "title": "16) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1628743356"
+        },
+        "-909612776": {
+            "type": "string",
+            "title": "16) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-909612776"
+        },
+        "2144152357": {
+            "type": "string",
+            "title": "15) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/2144152357"
+        },
+        "1950806848": {
+            "type": "string",
+            "title": "15) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1950806848"
+        },
+        "969713788": {
+            "type": "string",
+            "title": "15) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/969713788"
+        },
+        "140936210": {
+            "type": "string",
+            "title": "15) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/140936210"
+        },
+        "-9829802": {
+            "type": "string",
+            "title": "15) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-9829802"
+        },
+        "-438145955": {
+            "type": "string",
+            "title": "15) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-438145955"
+        },
+        "1916360485": {
+            "type": "string",
+            "title": "14) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1916360485"
+        },
+        "-2043269698": {
+            "type": "string",
+            "title": "14) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-2043269698"
+        },
+        "801124182": {
+            "type": "string",
+            "title": "14) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/801124182"
+        },
+        "1398870078": {
+            "type": "string",
+            "title": "14) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1398870078"
+        },
+        "1815596079": {
+            "type": "string",
+            "title": "14) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1815596079"
+        },
+        "-2083987512": {
+            "type": "string",
+            "title": "14) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-2083987512"
+        },
+        "-27569148": {
+            "type": "string",
+            "title": "13) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-27569148"
+        },
+        "2100357594": {
+            "type": "string",
+            "title": "13) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/2100357594"
+        },
+        "-1122379254": {
+            "type": "string",
+            "title": "13) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1122379254"
+        },
+        "265434218": {
+            "type": "string",
+            "title": "13) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/265434218"
+        },
+        "558290452": {
+            "type": "string",
+            "title": "13) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/558290452"
+        },
+        "814142952": {
+            "type": "string",
+            "title": "13) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/814142952"
+        },
+        "-96797710": {
+            "type": "string",
+            "title": "12) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-96797710"
+        },
+        "-749037216": {
+            "type": "string",
+            "title": "12) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-749037216"
+        },
+        "1755086079": {
+            "type": "string",
+            "title": "12) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1755086079"
+        },
+        "-1351419176": {
+            "type": "string",
+            "title": "12) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1351419176"
+        },
+        "-1520776831": {
+            "type": "string",
+            "title": "12) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1520776831"
+        },
+        "-1183042824": {
+            "type": "string",
+            "title": "12) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1183042824"
+        },
+        "1273592171": {
+            "type": "string",
+            "title": "11) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1273592171"
+        },
+        "1340266897": {
+            "type": "string",
+            "title": "11) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1340266897"
+        },
+        "-228455494": {
+            "type": "string",
+            "title": "11) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-228455494"
+        },
+        "916523484": {
+            "type": "string",
+            "title": "11) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/916523484"
+        },
+        "-1920170429": {
+            "type": "string",
+            "title": "11) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1920170429"
+        },
+        "634840282": {
+            "type": "string",
+            "title": "11) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/634840282"
+        },
+        "-1458797894": {
+            "type": "string",
+            "title": "10) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1458797894"
+        },
+        "2117796080": {
+            "type": "string",
+            "title": "10) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/2117796080"
+        },
+        "1271357135": {
+            "type": "string",
+            "title": "10) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1271357135"
+        },
+        "-2000482925": {
+            "type": "string",
+            "title": "10) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-2000482925"
+        },
+        "-70505805": {
+            "type": "string",
+            "title": "10) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-70505805"
+        },
+        "1862479056": {
+            "type": "string",
+            "title": "10) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1862479056"
+        },
+        "-852190706": {
+            "type": "string",
+            "title": "9) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-852190706"
+        },
+        "1876883990": {
+            "type": "string",
+            "title": "9) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1876883990"
+        },
+        "-1702001868": {
+            "type": "string",
+            "title": "9) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1702001868"
+        },
+        "-1362587644": {
+            "type": "string",
+            "title": "9) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1362587644"
+        },
+        "1219790235": {
+            "type": "string",
+            "title": "9) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1219790235"
+        },
+        "-235167699": {
+            "type": "string",
+            "title": "9) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-235167699"
+        },
+        "-1253582775": {
+            "type": "string",
+            "title": "8) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1253582775"
+        },
+        "-682049137": {
+            "type": "string",
+            "title": "8) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-682049137"
+        },
+        "-318106774": {
+            "type": "string",
+            "title": "8) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-318106774"
+        },
+        "445517554": {
+            "type": "string",
+            "title": "8) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/445517554"
+        },
+        "-1297283442": {
+            "type": "string",
+            "title": "8) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1297283442"
+        },
+        "-1171561776": {
+            "type": "string",
+            "title": "8) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1171561776"
+        },
+        "1915357991": {
+            "type": "string",
+            "title": "7) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1915357991"
+        },
+        "353227623": {
+            "type": "string",
+            "title": "7) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/353227623"
+        },
+        "1999458966": {
+            "type": "string",
+            "title": "7) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1999458966"
+        },
+        "-1738778998": {
+            "type": "string",
+            "title": "7) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1738778998"
+        },
+        "1376197851": {
+            "type": "string",
+            "title": "7) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1376197851"
+        },
+        "1474021309": {
+            "type": "string",
+            "title": "7) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1474021309"
+        },
+        "-217437165": {
+            "type": "string",
+            "title": "6) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-217437165"
+        },
+        "876346485": {
+            "type": "string",
+            "title": "6) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/876346485"
+        },
+        "-2026699041": {
+            "type": "string",
+            "title": "6) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-2026699041"
+        },
+        "-439677999": {
+            "type": "string",
+            "title": "6) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-439677999"
+        },
+        "-1846930536": {
+            "type": "string",
+            "title": "6) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1846930536"
+        },
+        "-168184826": {
+            "type": "string",
+            "title": "6) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-168184826"
+        },
+        "-1653673076": {
+            "type": "string",
+            "title": "5) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1653673076"
+        },
+        "-1390883843": {
+            "type": "string",
+            "title": "5) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1390883843"
+        },
+        "869770": {
+            "type": "string",
+            "title": "5) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/869770"
+        },
+        "279776712": {
+            "type": "string",
+            "title": "5) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/279776712"
+        },
+        "81111756": {
+            "type": "string",
+            "title": "5) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/81111756"
+        },
+        "1634594227": {
+            "type": "string",
+            "title": "5) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1634594227"
+        },
+        "1783145008": {
+            "type": "string",
+            "title": "4) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1783145008"
+        },
+        "2100280730": {
+            "type": "string",
+            "title": "4) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/2100280730"
+        },
+        "831180675": {
+            "type": "string",
+            "title": "4) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/831180675"
+        },
+        "1074167369": {
+            "type": "string",
+            "title": "4) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1074167369"
+        },
+        "435478880": {
+            "type": "string",
+            "title": "4) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/435478880"
+        },
+        "-1696373319": {
+            "type": "string",
+            "title": "4) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1696373319"
+        },
+        "771369105": {
+            "type": "string",
+            "title": "3) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/771369105"
+        },
+        "-2126461232": {
+            "type": "string",
+            "title": "3) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-2126461232"
+        },
+        "-2146656974": {
+            "type": "string",
+            "title": "3) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-2146656974"
+        },
+        "-254134922": {
+            "type": "string",
+            "title": "3) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-254134922"
+        },
+        "1347761430": {
+            "type": "string",
+            "title": "3) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1347761430"
+        },
+        "-666478381": {
+            "type": "string",
+            "title": "3) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-666478381"
+        },
+        "210465625": {
+            "type": "string",
+            "title": "2) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/210465625"
+        },
+        "1699973132": {
+            "type": "string",
+            "title": "2) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1699973132"
+        },
+        "-2044210631": {
+            "type": "string",
+            "title": "2) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-2044210631"
+        },
+        "765194833": {
+            "type": "string",
+            "title": "2) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/765194833"
+        },
+        "1756548725": {
+            "type": "string",
+            "title": "2) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1756548725"
+        },
+        "-1141731130": {
+            "type": "string",
+            "title": "2) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1141731130"
+        },
+        "1567841279": {
+            "type": "string",
+            "title": "1) Concepto cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1567841279"
+        },
+        "-1710641491": {
+            "type": "string",
+            "title": "1) Día de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1710641491"
+        },
+        "1140694819": {
+            "type": "string",
+            "title": "1) Mes de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1140694819"
+        },
+        "-605194440": {
+            "type": "string",
+            "title": "1) Año de pago: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-605194440"
+        },
+        "1086500566": {
+            "type": "string",
+            "title": "1) Valor de cuota: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1086500566"
+        },
+        "831411337": {
+            "type": "string",
+            "title": "1) Entidad: Plan de pagos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/831411337"
+        },
+        "324410061": {
+            "type": "string",
+            "title": "Opción-Sin crédito",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/324410061"
+        },
+        "1608394402": {
+            "type": "string",
+            "title": "Opción-Con crédito",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1608394402"
+        },
+        "1196510100": {
+            "type": "string",
+            "title": "Número de boletín",
+            "description": "Número de boletín",
+            "x-ms-property-name-alias": "dynamicFileSchema/1196510100"
+        },
+        "-238479479": {
+            "type": "string",
+            "title": "Descuento Financiero",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-238479479"
+        },
+        "-1585681983": {
+            "type": "string",
+            "title": "Año de diligenciamiento",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1585681983"
+        },
+        "462555020": {
+            "type": "string",
+            "title": "Coeficiente de administración",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/462555020"
+        },
+        "177851754": {
+            "type": "string",
+            "title": "Número de boletín",
+            "description": "Número de boletín",
+            "x-ms-property-name-alias": "dynamicFileSchema/177851754"
+        },
+        "-1563940586": {
+            "type": "string",
+            "title": "Promotor 1",
+            "description": "Promotor 1",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1563940586"
+        },
+        "1930850859": {
+            "type": "string",
+            "title": "Promotor 2",
+            "description": "Promotor 2",
+            "x-ms-property-name-alias": "dynamicFileSchema/1930850859"
+        },
+        "-1736234918": {
+            "type": "string",
+            "title": "Promotor 3",
+            "description": "Promotor 3",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1736234918"
+        },
+        "-835538696": {
+            "type": "string",
+            "title": "Asesor comercial",
+            "description": "Asesor comercial",
+            "x-ms-property-name-alias": "dynamicFileSchema/-835538696"
+        },
+        "415764416": {
+            "type": "string",
+            "title": "Jefe de ventas",
+            "description": "Jefe de ventas",
+            "x-ms-property-name-alias": "dynamicFileSchema/415764416"
+        },
+        "668760109": {
+            "type": "string",
+            "title": "Año de separación",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/668760109"
+        },
+        "-1523854877": {
+            "type": "string",
+            "title": "Mes de separación",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1523854877"
+        },
+        "442972594": {
+            "type": "string",
+            "title": "Día de separación",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/442972594"
+        },
+        "638765569": {
+            "type": "string",
+            "title": "Día de diligenciamiento",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/638765569"
+        },
+        "-1356500004": {
+            "type": "string",
+            "title": "Mes de diligenciamiento",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-1356500004"
+        },
+        "1796635951": {
+            "type": "string",
+            "title": "Año de diligenciamiento",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1796635951"
+        },
+        "889376384": {
+            "type": "string",
+            "title": "Ciudad de diligenciamiento",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/889376384"
+        },
+        "1548954240": {
+            "type": "string",
+            "title": "Observaciones",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/1548954240"
+        },
+        "-2136477747": {
+            "type": "string",
+            "title": "Opción-Acepta campañas de promoción y comercialización",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-2136477747"
+        },
+        "-2061390978": {
+            "type": "string",
+            "title": "Opción-Acepta la realización de estudios con fines estadísticos",
+            "description": " ",
+            "x-ms-property-name-alias": "dynamicFileSchema/-2061390978"
+        },
+        "-29967132": {
+            "type": "string",
+            "title": "Número de boletín",
+            "description": "Número de boletín",
+            "x-ms-property-name-alias": "dynamicFileSchema/-29967132"
+        }
+    },
+    "required": []
+}
