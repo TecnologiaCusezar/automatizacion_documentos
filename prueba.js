@@ -47,7 +47,10 @@ function sendRequest(method = "POST", link, json) {
 //sendRequest("POST","https://prod-95.westus.logic.azure.com:443/workflows/b5917db857b34868a1b3a47af4a5e4d1/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Zpckx4oSlzr4TtBR6bgsSiKYb4QlHgW8P20MlIob0zA","autorizacion_centrales");
 
 //Prueba Boletín de ventas
-sendRequest("POST", "https://prod-190.westus.logic.azure.com:443/workflows/82dfae4590034ed992a3d56aad858ad4/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=mMgvmHQHf3S0XxqFhggEyqyIL-oXJkj6WfyuNrlwSmQ", "boletin_ventas");
+// sendRequest("POST", "https://prod-190.westus.logic.azure.com:443/workflows/82dfae4590034ed992a3d56aad858ad4/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=mMgvmHQHf3S0XxqFhggEyqyIL-oXJkj6WfyuNrlwSmQ", "boletin_ventas");
+
+//Prueba Boletín de ventas JS
+sendRequest("POST", "https://prod-128.westus.logic.azure.com:443/workflows/c8ff544bc86f4248a264d56c54c5c34b/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=S29fMq5eWjqhxX0zT4g7OJYkmwKDgfeiApuOYVwPn20", "boletin_ventas");
 
 //let json_cliente = require('./autorizacion_centrales.json');
 

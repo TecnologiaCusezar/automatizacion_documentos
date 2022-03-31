@@ -347,6 +347,40 @@
                 "descuento_financiero": 0,
                 "costo_financiero": 0
             },
+            "garajes": [
+                {
+                    "c_digo": "",
+                    "descripci_n": ""
+                },
+                {
+                    "c_digo": "",
+                    "descripci_n": ""
+                },
+                {
+                    "c_digo": "",
+                    "descripci_n": ""
+                },
+                {
+                    "c_digo": "",
+                    "descripci_n": ""
+                },
+                {
+                    "c_digo": "",
+                    "descripci_n": ""
+                }
+            ],
+            "dep_sitos": [
+                {
+                    "c_digo": "",
+                    "descripci_n": "",
+                    "piso": ""
+                },
+                {
+                    "c_digo": "",
+                    "descripci_n": "",
+                    "piso": ""
+                }
+            ],
             "mes_estimado_entrega": "",
             "torre_hace_parte_cerramiento": true,
             "exterior": false,
@@ -382,185 +416,7 @@
                 "apellidos": "ROJAS ROJAS",
                 "n_mero_documento": "45556377",
                 "a_os_de_convivencia": "",
-                "fecha_de_liquidaci_n_de_sociedad": "",
-                "n_mero_de_notar_a_o_juzgado": "",
-                "n_mero_de_escritura": ""
-            },
-            "correo_electr_nico": "e.pereira.b81@gmail.com",
-            "n_mero_de_celular": "3193077282",
-            "n_mero_de_tel_fono": "3193077282",
-            "direcci_n_de_residencia": "455 Carrera 60",
-            "ciudad_de_residencia": "Bogotá",
-            "pa_s_de_residencia": "Colombia",
-            "informacion_financiera": {
-                "ingresos": [
-                    {
-                        "actividad": "Empleado",
-                        "c_digo_ciiu": "0010",
-                        "ocupaci_n": "",
-                        "cargo": "",
-                        "total": 6079832,
-                        "empresa": {
-                            "nombre": "SECRETARIA DISTRITAL DE GOBIERNO",
-                            "tel_fono": "3193077282",
-                            "direcci_n": "DIRECCIÓN OFICINA",
-                            "telefono": "3194278488"
-                        },
-                        "_p_que_tipo_de_producto_y_o_servicio_comercializa": "",
-                        "cesantias": "",
-                        "entidad": ""
-                    },
-                    {
-                        "actividad": "",
-                        "c_digo_ciiu": "",
-                        "ocupaci_n": "",
-                        "cargo": "",
-                        "total": 0,
-                        "empresa": {
-                            "nombre": "",
-                            "tel_fono": "",
-                            "direcci_n": ""
-                        },
-                        "_p_que_tipo_de_producto_y_o_servicio_comercializa": "",
-                        "cesantias": "",
-                        "entidad": ""
-                    }
-                ],
-                "cifin": 427000,
-                "aporte_por_primas": 3039900,
-                "ahorros": 0,
-                "gastos_personales": 973000,
-                "aportes": "",
-                "subsidio": {
-                    "entidad": "",
-                    "valor": 0
-                },
-                "activo": "50000000",
-                "pasivo": "10000000"
-            },
-            "informacion_pep": {
-                "_p_por_su_actividad_o_cargo_maneja_recursos p_blicos": false,
-                "_p_por_su_actividad_u_oficio_goza_usted_de_reconocimiento_p_blico_general": false,
-                "_p_por_su_actividad_o_cargo_ejerce_alg_n_grado_de_poder_p_blico": "",
-                "_p_existe_alg_n_v_nculo_entre_usted_y_una_persona_considerada_p_blicamente_expuesta": "",
-                "_p_es_usted_sujeto_de_obligaciones_tributarias_en_otros_pa_ses_o_grupo_de_pa_ses": "",
-                "nombre_gerente_comercial": "",
-                "n_mero_documento_gerente_comercial": "",
-                "nombre_oficial_cumplimiento": "",
-                "n_mero_documento_oficial_cumplimiento": "",
-                "_p_por_su_actividad_o_cargo_maneja_recursos_p_blicos": false
-            },
-            "origen_de_fondos": "De mi actividad como Empleado",
-            "acepta_campa_as_de_promoci_n_de_proyectos": true,
-            "acepta_estudios_estad_sticos_del_cliente": true,
-            "Nacionalidad": "Masculino"
-        },
-        {
-            "nombre": "MARTHA LILIANA",
-            "primer_apellido": "ROJAS",
-            "segundo_apellido": "QUIÑONES",
-            "tipo_documento": "Cédula de ciudadanía",
-            "n_mero_documento": "45556377",
-            "fecha_expedici_n": "",
-            "lugar_expedici_n": "CARTAGENA",
-            "fecha_nacimiento": "1983-12-27",
-            "lugar_nacimiento": "",
-            "nacionalidad": "",
-            "estado_civil": "UL",
-            "sexo": "",
-            "c_nyugue": {
-                "nombres": "",
-                "apellidos": "",
-                "n_mero_documento": "",
-                "a_os_de_convivencia": "",
-                "fecha_de_liquidaci_n_de_sociedad": "",
-                "n_mero_de_notar_a_o_juzgado": "",
-                "n_mero_de_escritura": ""
-            },
-            "correo_electr_nico": "martha.rojas.q@hotmail.com",
-            "n_mero_de_celular": "3102617162",
-            "n_mero_de_tel_fono": "",
-            "direcci_n_de_residencia": "455 Carrera 60",
-            "ciudad_de_residencia": "Bogotá",
-            "pa_s_de_residencia": "Colombia",
-            "informacion_financiera": {
-                "ingresos": [
-                    {
-                        "actividad": "Independiente",
-                        "c_digo_ciiu": "",
-                        "ocupaci_n": "",
-                        "cargo": "",
-                        "total": 0,
-                        "empresa": {
-                            "nombre": "",
-                            "tel_fono": "",
-                            "direcci_n": ""
-                        },
-                        "_p_que_tipo_de_producto_y_o_servicio_comercializa": "",
-                        "cesantias": ""
-                    },
-                    {
-                        "actividad": "",
-                        "c_digo_ciiu": "",
-                        "ocupaci_n": "",
-                        "cargo": "",
-                        "total": 0,
-                        "empresa": {
-                            "nombre": "",
-                            "tel_fono": "",
-                            "direcci_n": ""
-                        },
-                        "_p_que_tipo_de_producto_y_o_servicio_comercializa": "",
-                        "cesantias": "",
-                        "entidad": ""
-                    }
-                ],
-                "cifin": 0,
-                "aporte_por_primas": 0,
-                "ahorros": 0,
-                "gastos_personales": 0,
-                "aportes": "",
-                "subsidio": {
-                    "entidad": "",
-                    "valor": 0
-                },
-                "activo": 0,
-                "pasivo": 0
-            },
-            "informacion_pep": {
-                "_p_por_su_actividad_o_cargo_maneja_recursos p_blicos": false,
-                "_p_por_su_actividad_u_oficio_goza_usted_de_reconocimiento_p_blico_general": false,
-                "_p_por_su_actividad_o_cargo_ejerce_alg_n_grado_de_poder_p_blico": "",
-                "_p_existe_alg_n_v_nculo_entre_usted_y_una_persona_considerada_p_blicamente_expuesta": "",
-                "_p_es_usted_sujeto_de_obligaciones_tributarias_en_otros_pa_ses_o_grupo_de_pa_ses": "",
-                "nombre_gerente_comercial": "",
-                "n_mero_documento_gerente_comercial": "",
-                "nombre_oficial_cumplimiento": "",
-                "n_mero_documento_oficial_cumplimiento": ""
-            },
-            "origen_de_fondos": "De mi actividad como Independiente",
-            "acepta_campa_as_de_promoci_n_de_proyectos": true,
-            "acepta_estudios_estad_sticos_del_cliente": true
-        },
-        {
-            "nombre": "ELIECER",
-            "primer_apellido": "PEREIRA",
-            "segundo_apellido": "BAUTISTA",
-            "tipo_documento": "Cédula de ciudadanía",
-            "n_mero_documento": "13744106",
-            "fecha_expedici_n": "12/11/2019",
-            "lugar_expedici_n": "BUCARAMANGA",
-            "fecha_nacimiento": "1980-08-19",
-            "lugar_nacimiento": "BOGOTÁ D.C.",
-            "nacionalidad": "",
-            "estado_civil": "UL",
-            "sexo": "",
-            "c_nyugue": {
-                "nombres": "MARTHA LILIANA",
-                "apellidos": "ROJAS ROJAS",
-                "n_mero_documento": "45556377",
-                "a_os_de_convivencia": "",
-                "fecha_de_liquidaci_n_de_sociedad": "",
+                "fecha_de_liquidaci_n_de_sociedad": "2020-02-20",
                 "n_mero_de_notar_a_o_juzgado": "",
                 "n_mero_de_escritura": ""
             },
@@ -651,7 +507,7 @@
                 "apellidos": "ROJAS ROJAS",
                 "n_mero_documento": "45556377",
                 "a_os_de_convivencia": "",
-                "fecha_de_liquidaci_n_de_sociedad": "",
+                "fecha_de_liquidaci_n_de_sociedad": "2020-02-20",
                 "n_mero_de_notar_a_o_juzgado": "",
                 "n_mero_de_escritura": ""
             },
@@ -742,7 +598,189 @@
                 "apellidos": "ROJAS ROJAS",
                 "n_mero_documento": "45556377",
                 "a_os_de_convivencia": "",
-                "fecha_de_liquidaci_n_de_sociedad": "",
+                "fecha_de_liquidaci_n_de_sociedad": "2020-02-20",
+                "n_mero_de_notar_a_o_juzgado": "",
+                "n_mero_de_escritura": ""
+            },
+            "correo_electr_nico": "e.pereira.b81@gmail.com",
+            "n_mero_de_celular": "3193077282",
+            "n_mero_de_tel_fono": "3193077282",
+            "direcci_n_de_residencia": "455 Carrera 60",
+            "ciudad_de_residencia": "Bogotá",
+            "pa_s_de_residencia": "Colombia",
+            "informacion_financiera": {
+                "ingresos": [
+                    {
+                        "actividad": "Empleado",
+                        "c_digo_ciiu": "0010",
+                        "ocupaci_n": "",
+                        "cargo": "",
+                        "total": 6079832,
+                        "empresa": {
+                            "nombre": "SECRETARIA DISTRITAL DE GOBIERNO",
+                            "tel_fono": "3193077282",
+                            "direcci_n": "DIRECCIÓN OFICINA",
+                            "telefono": "3194278488"
+                        },
+                        "_p_que_tipo_de_producto_y_o_servicio_comercializa": "",
+                        "cesantias": "",
+                        "entidad": ""
+                    },
+                    {
+                        "actividad": "",
+                        "c_digo_ciiu": "",
+                        "ocupaci_n": "",
+                        "cargo": "",
+                        "total": 0,
+                        "empresa": {
+                            "nombre": "",
+                            "tel_fono": "",
+                            "direcci_n": ""
+                        },
+                        "_p_que_tipo_de_producto_y_o_servicio_comercializa": "",
+                        "cesantias": "",
+                        "entidad": ""
+                    }
+                ],
+                "cifin": 427000,
+                "aporte_por_primas": 3039900,
+                "ahorros": 0,
+                "gastos_personales": 973000,
+                "aportes": "",
+                "subsidio": {
+                    "entidad": "",
+                    "valor": 0
+                },
+                "activo": "50000000",
+                "pasivo": "10000000"
+            },
+            "informacion_pep": {
+                "_p_por_su_actividad_o_cargo_maneja_recursos p_blicos": false,
+                "_p_por_su_actividad_u_oficio_goza_usted_de_reconocimiento_p_blico_general": false,
+                "_p_por_su_actividad_o_cargo_ejerce_alg_n_grado_de_poder_p_blico": "",
+                "_p_existe_alg_n_v_nculo_entre_usted_y_una_persona_considerada_p_blicamente_expuesta": "",
+                "_p_es_usted_sujeto_de_obligaciones_tributarias_en_otros_pa_ses_o_grupo_de_pa_ses": "",
+                "nombre_gerente_comercial": "",
+                "n_mero_documento_gerente_comercial": "",
+                "nombre_oficial_cumplimiento": "",
+                "n_mero_documento_oficial_cumplimiento": "",
+                "_p_por_su_actividad_o_cargo_maneja_recursos_p_blicos": false
+            },
+            "origen_de_fondos": "De mi actividad como Empleado",
+            "acepta_campa_as_de_promoci_n_de_proyectos": true,
+            "acepta_estudios_estad_sticos_del_cliente": true,
+            "Nacionalidad": "Masculino"
+        },
+        {
+            "nombre": "ELIECER",
+            "primer_apellido": "PEREIRA",
+            "segundo_apellido": "BAUTISTA",
+            "tipo_documento": "Cédula de ciudadanía",
+            "n_mero_documento": "13744106",
+            "fecha_expedici_n": "12/11/2019",
+            "lugar_expedici_n": "BUCARAMANGA",
+            "fecha_nacimiento": "1980-08-19",
+            "lugar_nacimiento": "BOGOTÁ D.C.",
+            "nacionalidad": "",
+            "estado_civil": "UL",
+            "sexo": "",
+            "c_nyugue": {
+                "nombres": "MARTHA LILIANA",
+                "apellidos": "ROJAS ROJAS",
+                "n_mero_documento": "45556377",
+                "a_os_de_convivencia": "",
+                "fecha_de_liquidaci_n_de_sociedad": "2020-02-20",
+                "n_mero_de_notar_a_o_juzgado": "",
+                "n_mero_de_escritura": ""
+            },
+            "correo_electr_nico": "e.pereira.b81@gmail.com",
+            "n_mero_de_celular": "3193077282",
+            "n_mero_de_tel_fono": "3193077282",
+            "direcci_n_de_residencia": "455 Carrera 60",
+            "ciudad_de_residencia": "Bogotá",
+            "pa_s_de_residencia": "Colombia",
+            "informacion_financiera": {
+                "ingresos": [
+                    {
+                        "actividad": "Empleado",
+                        "c_digo_ciiu": "0010",
+                        "ocupaci_n": "",
+                        "cargo": "",
+                        "total": 6079832,
+                        "empresa": {
+                            "nombre": "SECRETARIA DISTRITAL DE GOBIERNO",
+                            "tel_fono": "3193077282",
+                            "direcci_n": "DIRECCIÓN OFICINA",
+                            "telefono": "3194278488"
+                        },
+                        "_p_que_tipo_de_producto_y_o_servicio_comercializa": "",
+                        "cesantias": "",
+                        "entidad": ""
+                    },
+                    {
+                        "actividad": "",
+                        "c_digo_ciiu": "",
+                        "ocupaci_n": "",
+                        "cargo": "",
+                        "total": 0,
+                        "empresa": {
+                            "nombre": "",
+                            "tel_fono": "",
+                            "direcci_n": ""
+                        },
+                        "_p_que_tipo_de_producto_y_o_servicio_comercializa": "",
+                        "cesantias": "",
+                        "entidad": ""
+                    }
+                ],
+                "cifin": 427000,
+                "aporte_por_primas": 3039900,
+                "ahorros": 0,
+                "gastos_personales": 973000,
+                "aportes": "",
+                "subsidio": {
+                    "entidad": "",
+                    "valor": 0
+                },
+                "activo": "50000000",
+                "pasivo": "10000000"
+            },
+            "informacion_pep": {
+                "_p_por_su_actividad_o_cargo_maneja_recursos p_blicos": false,
+                "_p_por_su_actividad_u_oficio_goza_usted_de_reconocimiento_p_blico_general": false,
+                "_p_por_su_actividad_o_cargo_ejerce_alg_n_grado_de_poder_p_blico": "",
+                "_p_existe_alg_n_v_nculo_entre_usted_y_una_persona_considerada_p_blicamente_expuesta": "",
+                "_p_es_usted_sujeto_de_obligaciones_tributarias_en_otros_pa_ses_o_grupo_de_pa_ses": "",
+                "nombre_gerente_comercial": "",
+                "n_mero_documento_gerente_comercial": "",
+                "nombre_oficial_cumplimiento": "",
+                "n_mero_documento_oficial_cumplimiento": "",
+                "_p_por_su_actividad_o_cargo_maneja_recursos_p_blicos": false
+            },
+            "origen_de_fondos": "De mi actividad como Empleado",
+            "acepta_campa_as_de_promoci_n_de_proyectos": true,
+            "acepta_estudios_estad_sticos_del_cliente": true,
+            "Nacionalidad": "Masculino"
+        },
+        {
+            "nombre": "ELIECER",
+            "primer_apellido": "PEREIRA",
+            "segundo_apellido": "BAUTISTA",
+            "tipo_documento": "Cédula de ciudadanía",
+            "n_mero_documento": "13744106",
+            "fecha_expedici_n": "12/11/2019",
+            "lugar_expedici_n": "BUCARAMANGA",
+            "fecha_nacimiento": "1980-08-19",
+            "lugar_nacimiento": "BOGOTÁ D.C.",
+            "nacionalidad": "",
+            "estado_civil": "UL",
+            "sexo": "",
+            "c_nyugue": {
+                "nombres": "MARTHA LILIANA",
+                "apellidos": "ROJAS ROJAS",
+                "n_mero_documento": "45556377",
+                "a_os_de_convivencia": "",
+                "fecha_de_liquidaci_n_de_sociedad": "2020-02-20",
                 "n_mero_de_notar_a_o_juzgado": "",
                 "n_mero_de_escritura": ""
             },

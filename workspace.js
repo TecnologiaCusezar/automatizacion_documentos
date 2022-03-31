@@ -81,15 +81,7 @@ function deploy() {
 }
 
 let json = JSON.parse(fs.readFileSync("./boletin_ventas.json"));
-let newCuote = JSON.parse(`{
-    "concepto": "Cuota",
-    "fecha": "2024-08-26",
-    "valor": 50,
-    "periodo": "",
-    "entidad": "",
-    "amortizaci_n": "",
-    "plazo": 0
-}`);
+json.proyecto.unidad.financiaci_n.plazo = 50;
 
 for (let i = 35; i < 50; i++) {
     let newCuote = JSON.parse(`{
@@ -114,7 +106,7 @@ json.proyecto.unidad.financiaci_n.plan_de_pagos.forEach(element => {
 //console.log('\n');
 //console.log('\n');
 let populator = new JsonDocPopulator();
-let cliente = populator.getAttributes("triggerBody()", json);
+let cliente = populator.getAttributes("triggerBody()", json, true);
 //sendRequest("POST", "https://prod-190.westus.logic.azure.com:443/workflows/82dfae4590034ed992a3d56aad858ad4/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=mMgvmHQHf3S0XxqFhggEyqyIL-oXJkj6WfyuNrlwSmQ", JSON.stringify(json));
 
 //fs.writeFileSync('./boletin_completer.json', JSON.stringify(cliente), 'utf-8');

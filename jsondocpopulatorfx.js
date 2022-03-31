@@ -1,8 +1,14 @@
 export default class JsonDocPopulator {
     constructor() {
     }
-    getAttributes(path, object) {
+    getAttributes(path, object, option = false) {
         try {
+            let f_q = ''
+            let b_q = '';
+            //if(option){
+                f_q = '@{';
+                b_q = '}';
+            //}
             let self = this;
             let tempPath = path;
             let keys = Object.keys(object);
@@ -23,29 +29,29 @@ export default class JsonDocPopulator {
                         if (typeof value == "boolean") {
                             let newPath = `${tempPath}?['${key}']`;
                             object[key] = [
-                                `@{${newPath}}`,
-                                `@{if(equals(string(${newPath}),'true'),'X','')}`
+                                `${f_q}${newPath}${b_q}`,
+                                `${f_q}if(equals(string(${newPath}),'true'),'X','')${b_q}`
                             ];
-
                         } else if (Number.isInteger(value)) {
                             let newPath = `${tempPath}?['${key}']`;
                             object[key] = [
-                                `@{${newPath}}`,
-                                `@{if(equals(${newPath},null),' ',formatNumber(${newPath},'C2'))}`
+                                `${f_q}${newPath}${b_q}`,
+                                `${f_q}if(equals(${newPath},null),' ',formatNumber(${newPath},'C2'))${b_q}`,
+                                `${f_q}if(equals(${newPath},null),' ',formatNumber(${newPath},'0,0'))${b_q}`
                             ];
                         } else if (!isNaN(Date.parse(value))) {
                             let newPath = `${tempPath}?['${key}']`;
-                            object[key] = [
-                                `@{${newPath}}`,
-                                `@{if(or(equals(length(${newPath}),10),equals(${newPath},null)),' ',formatDateTime(${newPath},'dd'))}`,
-                                `@{if(or(equals(length(${newPath}),10),equals(${newPath},null)),' ',formatDateTime(${newPath},'MM'))}`,
-                                `@{if(or(equals(length(${newPath}),10),equals(${newPath},null)),' ',formatDateTime(${newPath},'yyyy'))}`
-                            ];
+                            object[key] = {
+                                default: `${f_q}${newPath}${b_q}`,
+                                día: `${f_q}if(equals(${newPath},null),' ',if(lessOrEquals(length(${newPath}),10),'',formatDateTime(${newPath},'dd')))${b_q}`,
+                                mes: `${f_q}if(equals(${newPath},null),' ',if(lessOrEquals(length(${newPath}),10),'',formatDateTime(${newPath},'MM')))${b_q}`,
+                                año: `${f_q}if(equals(${newPath},null),' ',if(lessOrEquals(length(${newPath}),10),'',formatDateTime(${newPath},'yyyy')))${b_q}`
+                            };
                         } else if (typeof value === 'string') {
                             let newPath = `${tempPath}?['${key}']`;
                             object[key] = [
-                                `@{${newPath}}`,
-                                `@{if(equals(${newPath},''),'','')}`
+                                `${f_q}${newPath}${b_q}`,
+                                `${f_q}if(equals(${newPath},'+'),'%','')${b_q}`
                             ];
                         }
                         //console.log(`Propiedad ${key} actualizada correctamente\Detalles: ${newPath}`);
@@ -58,6 +64,7 @@ export default class JsonDocPopulator {
             console.log(`Error detectado en el rango ${path}\nDetalles: ${error}`);
         }
     }
+    /*
     getSchema(content, object) {
         try {
             let self = this;
@@ -93,8 +100,8 @@ export default class JsonDocPopulator {
                         } else if (!isNaN(Date.parse(value))) {
                             let newPath = `${tempPath}?['${key}']`;
                             object[key] = {
-                                default: `@${newPath}}`,
-                                dia: `@if(equals(${newPath},null),' ',if(lessOrEquals(length(${newPath}),10),'',formatDateTime(${newPath},'dd'))`,
+                                default: `@${newPath}`,
+                                día: `@if(equals(${newPath},null),' ',if(lessOrEquals(length(${newPath}),10),'',formatDateTime(${newPath},'dd'))`,
                                 mes: `@if(equals(${newPath},null),' ',if(lessOrEquals(length(${newPath}),10),'',formatDateTime(${newPath},'MM'))`,
                                 año: `@if(equals(${newPath},null),' ',if(lessOrEquals(length(${newPath}),10),'',formatDateTime(${newPath},'yyyy'))`
                             };
@@ -114,7 +121,7 @@ export default class JsonDocPopulator {
         } catch (error) {
             console.log(`Error detectado en el rango ${path}\nDetalles: ${error}`);
         }
-    }
+    }*/
     getByTrace(object, trace) {
         try {
             let traceArray = process.argv.slice(2);
