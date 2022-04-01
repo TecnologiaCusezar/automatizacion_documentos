@@ -6,8 +6,8 @@ export default class JsonDocPopulator {
             let f_q = ''
             let b_q = '';
             //if(option){
-                f_q = '@{';
-                b_q = '}';
+                f_q = '';
+                b_q = '';
             //}
             let self = this;
             let tempPath = path;

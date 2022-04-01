@@ -79,7 +79,7 @@ function deploy() {
         }
     })
 }
-
+/*
 let json = JSON.parse(fs.readFileSync("./boletin_ventas.json"));
 json.proyecto.unidad.financiaci_n.plazo = 50;
 
@@ -105,46 +105,200 @@ json.proyecto.unidad.financiaci_n.plan_de_pagos.forEach(element => {
 //console.log(JSON.stringify(json));
 //console.log('\n');
 //console.log('\n');
-let populator = new JsonDocPopulator();
-let cliente = populator.getAttributes("triggerBody()", json, true);
+//let populator = new JsonDocPopulator();
+//let cliente = populator.getAttributes("triggerBody()", json, true);
 //sendRequest("POST", "https://prod-190.westus.logic.azure.com:443/workflows/82dfae4590034ed992a3d56aad858ad4/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=mMgvmHQHf3S0XxqFhggEyqyIL-oXJkj6WfyuNrlwSmQ", JSON.stringify(json));
 
-//fs.writeFileSync('./boletin_completer.json', JSON.stringify(cliente), 'utf-8');
-//console.log("El archivo boletin_completer.json ha sido actualizado !");
-//console.log('\n');
-//console.log('\n');
-//console.log(populator.getByTrace(cliente, "proyecto>unidad>financiaci_n>plan_de_pagos>20>fecha"));
-// console.log(populator.getByTrace(cliente,"proyecto>unidad>financiaci_n>plan_de_pagos>20>concepto>0"));
-// console.log(populator.getByTrace(cliente,"proyecto>unidad>financiaci_n>plan_de_pagos>20>valor"));
-// console.log(populator.getByTrace(cliente,"compradores>2>ciudad_de_residencia>0"));
+*/
 
-import { XMLParser, XMLBuilder, XMLValidator } from 'fast-xml-parser';
 
-const parser = new XMLParser();
-let jObj = parser.parse(fs.readFileSync("./freeformatter-out.xml"));
+function azure() {
 
-const builder = new XMLBuilder();
-const xmlContent = builder.build(jObj);
+    let json = JSON.parse('');
+    let ingresos_total_mensual = 0;
 
-console.log(jObj);
+    json.compradores.forEach(comprador => {
+        comprador.informacion_financiera.ingresos.forEach(ingreso => {
+            ingresos_total_mensual += ingreso.total;
+        });
+    });
+
+    return ingresos_total_mensual;
 
 
 
+    /*
+    let json = JSON.parse('');
+    let conceptos_cuota_inicial = [
+        'AFC',
+        'Cesantias',
+        'Cuota',
+        'Fondo Pensiones Voluntarias',
+        'Otras cesantias',
+        'Otros AFC',
+        'Reforma Escriturable',
+        'Reformas',
+        'Separación',
+        'Ultimo Pago'
+    ];
+    let conceptos_escrituracion = [
+        'Ahorro Prog',
+        'C:CreditoTer',
+        'Subsidio'
+    ];
+    let cuotas = {
+        ingresos: 0,
+        concepto: ''
+    };
+    let escrituracion = {
+        ingresos: 0,
+        concepto: '',
+        entidad: ''
+    };
+    let subsidio = {
+        ingresos: 0,
+        concepto: '',
+        entidad: ''
+    };
+    let credito = {
+        ingresos: 0,
+        concepto: '',
+        entidad: ''
+    };
 
+    json.proyecto.unidad.financiaci_n.plan_de_pagos.forEach(cuota => {
+        if (conceptos_cuota_inicial.indexOf(cuota.concepto) != -1) {
+            cuotas.ingresos += cuota.valor;
+        } else if (conceptos_escrituracion.indexOf(cuota.concepto) != -1) {
+            if (conceptos_escrituracion.indexOf(cuota.concepto) == 1) {
+                credito.ingresos += cuota.valor;
+                credito.concepto = 'Crédito hipotecario';
+                credito.entidad = cuota.entidad;
+            } else if (conceptos_escrituracion.indexOf(cuota.concepto) == 2) {
+                subsidio.ingresos += cuota.valor;
+                subsidio.concepto = cuota.concepto;
+                subsidio.entidad = cuota.entidad;
+            } else {
+                escrituracion.ingresos += cuota.valor;
+                escrituracion.concepto = cuota.concepto;
+                escrituracion.entidad = cuota.entidad;
+            }
+        }
+    });
 
+    let conceptos = [
+        escrituracion,
+        subsidio,
+        credito
+    ];
+    conceptos.sort(function (a, b) {
+        return b.ingresos - a.ingresos;
+    });
+    let saldos = [];
+    conceptos.forEach(element => {
+        saldos.push({
+            concepto: element.concepto,
+            valor: element.ingresos,
+            entidad: element.entidad
+        });
+    });
 
+    saldos.push({
+        concepto: 'Cuota Inicial',
+        valor: cuotas.ingresos,
+        entidad: ''
+    });
 
+    return saldos;
+    let json = JSON.parse(fs.readFileSync("./boletin_ventas.json"));
+    let conceptos_cuota_inicial = [
+        'AFC',
+        'Cesantias',
+        'Cuota',
+        'Fondo Pensiones Voluntarias',
+        'Otras cesantias',
+        'Otros AFC',
+        'Reforma Escriturable',
+        'Reformas',
+        'Separación',
+        'Ultimo Pago'
+    ];
+    let conceptos_escrituracion = [
+        'Ahorro Prog',
+        'C:CreditoTer',
+        'Subsidio'
+    ];
+    let cuotas = {
+        ingresos: 0,
+        concepto: ''
+    };
+    let escrituracion = {
+        ingresos: 0,
+        concepto: '',
+        entidad: ''
+    };
+    let subsidio = {
+        ingresos: 0,
+        concepto: '',
+        entidad: ''
+    };
+    let credito = {
+        ingresos: 0,
+        concepto: '',
+        entidad: ''
+    };
 
+    json.proyecto.unidad.financiaci_n.plan_de_pagos.forEach(cuota => {
+        if (conceptos_cuota_inicial.indexOf(cuota.concepto) != -1) {
+            cuotas.ingresos += cuota.valor;
+        } else if (conceptos_escrituracion.indexOf(cuota.concepto) != -1) {
+            if (conceptos_escrituracion.indexOf(cuota.concepto) == 1) {
+                credito.ingresos += cuota.valor;
+                // credito.concepto = cuota.concepto;
+                credito.concepto = 'Crédito hipotecario';
+                credito.entidad = cuota.entidad;
+            } else if (conceptos_escrituracion.indexOf(cuota.concepto) == 2) {
+                subsidio.ingresos += cuota.valor;
+                subsidio.concepto = cuota.concepto;
+                subsidio.entidad = cuota.entidad;
+            } else {
+                escrituracion.ingresos += cuota.valor;
+                escrituracion.concepto = cuota.concepto;
+                escrituracion.entidad = cuota.entidad;
+            }
+        }
+    });
 
+    let conceptos = [
+        escrituracion,
+        subsidio,
+        credito
+    ];
 
+    conceptos.sort(function (a, b) {
+        return b.ingresos - a.ingresos;
+    });
 
-let traceArray = process.argv.slice(2);
-if (traceArray.length > 0) {
-    if (traceArray[0].toLowerCase() === 'serve') {
-        deploy();
-    } else {
-        throw new Error("Debe especificar la acción de traza");
-    }
+    let saldos = [];
+    conceptos.forEach(element => {
+        saldos.push({
+            concepto: element.concepto,
+            valor: element.ingresos,
+            entidad: element.entidad
+        });
+    });
+
+    saldos.push({
+        concepto: 'Cuota Inicial',
+        valor: cuotas.ingresos,
+        entidad: ''
+    });
+
+    return saldos;
+
+    // @{if(equals(outputs('Valor_Apto_y_Garajes')?[0],null),' ',formatNumber(outputs('Valor_Apto_y_Garajes')?[0],'0,0'))}
+
+*/
+
 }
-
-
+console.log(azure());

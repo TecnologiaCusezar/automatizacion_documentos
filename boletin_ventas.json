@@ -9,6 +9,18 @@
             {
                 "nombre": "Nicolás santos",
                 "cargo": "asesor"
+            },
+            {
+                "nombre": "Persona 1",
+                "cargo": "promotor_1"
+            },
+            {
+                "nombre": "Persona 2",
+                "cargo": "promotor_1"
+            },
+            {
+                "nombre": "Persona 3",
+                "cargo": "promotor_1"
             }
         ],
         "tel_fono": "6516066",
@@ -349,24 +361,29 @@
             },
             "garajes": [
                 {
-                    "c_digo": "",
-                    "descripci_n": ""
+                    "c_digo": "13",
+                    "descripci_n": "En Sótano",
+                    "valor": 20000000
+                },
+                {
+                    "c_digo": "13",
+                    "descripci_n": "En Sótano",
+                    "valor": 20000000
                 },
                 {
                     "c_digo": "",
-                    "descripci_n": ""
+                    "descripci_n": "",
+                    "valor": 0
                 },
                 {
                     "c_digo": "",
-                    "descripci_n": ""
+                    "descripci_n": "",
+                    "valor": 0
                 },
                 {
                     "c_digo": "",
-                    "descripci_n": ""
-                },
-                {
-                    "c_digo": "",
-                    "descripci_n": ""
+                    "descripci_n": "",
+                    "valor": 0
                 }
             ],
             "dep_sitos": [

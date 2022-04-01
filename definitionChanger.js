@@ -2,6 +2,7 @@ import fs from 'fs';
 import JsonDocPopulator from './jsondocpopulatorfx.js';
 
 let fileSchema = JSON.parse(fs.readFileSync("./dynamicFileSchema.json"));
+let fileSchema_ = JSON.parse(fs.readFileSync("C:/Users/jroa/Downloads/boletin-default_20220328161836/definition.json"));
 let json = JSON.parse(fs.readFileSync("./boletin_ventas.json"));
 json.proyecto.unidad.financiaci_n.plazo = 50;
 
@@ -25,6 +26,7 @@ json.proyecto.unidad.financiaci_n.plan_de_pagos.forEach(element => {
 let populator = new JsonDocPopulator();
 let cliente = populator.getAttributes("triggerBody()", json);
 let nuevo_json = '{';
+let dynamicSchema = fileSchema_.properties.definition.actions.Populate_a_Microsoft_Word_template_2.inputs.parameters;
 //console.log(fileSchema.properties);
 Object.keys(fileSchema.properties).forEach((tagName) => {
 
@@ -46,7 +48,12 @@ Object.keys(fileSchema.properties).forEach((tagName) => {
         }
         // console.log(`proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>${concept}${(complement == null) ? '' : ('>' + complement)}"`);
         // console.log(`"${tag['x-ms-property-name-alias']}" : "${populator.getByTrace(cliente, `proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>${concept}${(complement == null) ? '' : ('>' + complement)}`)}"`);
-        nuevo_json += `"${tag['x-ms-property-name-alias']}" : "@${(concept == 'concepto') ? 'concat(' : ''}${populator.getByTrace(cliente, `proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>${concept}${(complement == null) ? '' : ('>' + complement)}`)}${(concept == 'concepto') ? (',\' \',' + populator.getByTrace(cliente, `proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>${concept}${(complement == null) ? '' : ('>' + complement)}`) + ')') : ''}",`;
+
+        Object.keys(dynamicSchema).forEach(keyName => {
+            if (keyName == tag['x-ms-property-name-alias']) {
+                dynamicSchema[keyName] = `@if(or(equals(${populator.getByTrace(cliente,`proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>concepto>0`)},'Subsidio'),equals(${populator.getByTrace(cliente, `proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>concepto>0`)},'Ahorro Prog'),equals(${populator.getByTrace(cliente, `proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>concepto>0`)},'C:CreditoTer')),'',${(concept == 'concepto') ? 'concat(' : ''}${populator.getByTrace(cliente, `proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>${concept}${(complement == null) ? '' : ('>' + complement)}`)}${(concept == 'concepto') ? (',\' \',' + populator.getByTrace(cliente, `proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>periodo>0`) + ')') : ''})`;
+            }
+        });
     }
     /*
     if (title.includes('Opción-')) {
@@ -110,5 +117,6 @@ Object.keys(fileSchema.properties).forEach((tagName) => {
     }*/
 });
 nuevo_json += '}';
-console.log(nuevo_json);
-fs.writeFileSync('new_dynamicFileSchema.json', nuevo_json);
+console.log(fileSchema_.properties.definition.actions.Populate_a_Microsoft_Word_template_2.inputs.parameters);
+//C:\Users\jroa\Downloads\boletin-default_20220328161836\Microsoft.Flow\flows\342ca1a0-37d8-46f3-b74a-7ca430e1a588\definition.json
+fs.writeFileSync('C:/Users/jroa/Downloads/boletin-default_20220328161836/Microsoft.Flow/flows/342ca1a0-37d8-46f3-b74a-7ca430e1a588/definition.json', JSON.stringify(fileSchema_));

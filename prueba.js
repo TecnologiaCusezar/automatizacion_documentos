@@ -34,6 +34,37 @@ function sendRequest(method = "POST", link, json) {
     }
 }
 
+function sendPlainRequest(method = "POST", link, json) {
+    try {
+        let miliSegundos = 0;
+        const options = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(json),
+        };
+        let hostname = url(link).hostname;
+        console.log("\nSolicitud enviada a " + hostname + "...\n");
+        let status = null;
+        fetch(link, options).then((res) => { status = res.status; return res.json() }).then((res) => {
+            let mainHeader = "[" + new Date().toUTCString() + "] SERVER " + hostname;
+            let messagebody = "Status: " + status + " \nDetalles: \n" + JSON.stringify(res) + "\n .endPoint \nTime: " + (miliSegundos / 60000).toFixed(3) + " min (" + (miliSegundos / 1000).toFixed(3) + " s / " + miliSegundos + " ms)";
+            if (res.ok) {
+                console.log(mainHeader + " : Éxito!: " + messagebody);
+            } else {
+                console.log(mainHeader + " : Error!: " + messagebody);
+            }
+            clearInterval(temporizador);
+        });
+        let temporizador = setInterval(function () {
+            miliSegundos++;
+        }, 1);
+    } catch (error) {
+        console.log("Error!: " + error);
+    }
+}
+
 //Prueba Salesforce HTTP Requester
 //sendRequest("POST","https://prod-22.westus.logic.azure.com:443/workflows/623a821225cf4d2b9e984e8d2f7ea5b8/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=1TkPdu1nbcf3_Rwv0gsCZ9cpdTs94KNKwZp3GFVUjdc","salesforce_requester");
 
@@ -52,6 +83,94 @@ function sendRequest(method = "POST", link, json) {
 //Prueba Boletín de ventas JS
 sendRequest("POST", "https://prod-128.westus.logic.azure.com:443/workflows/c8ff544bc86f4248a264d56c54c5c34b/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=S29fMq5eWjqhxX0zT4g7OJYkmwKDgfeiApuOYVwPn20", "boletin_ventas");
 
+//Prueba Azure Functions
+/*
+sendPlainRequest("POST", "https://cusezarfunctions.azurewebsites.net/api/JSReturner?code=eiYzPf1hA2ZFFlqL8VL7MBu9nr0ykpUCauVefJYVmTqjsifSC8yRXg==", `
+let json = JSON.parse('');
+let conceptos_cuota_inicial = [
+        'AFC',
+        'Cesantias',
+        'Cuota',
+        'Fondo Pensiones Voluntarias',
+        'Otras cesantias',
+        'Otros AFC',
+        'Reforma Escriturable',
+        'Reformas',
+        'Separación',
+        'Ultimo Pago'
+    ];
+    let conceptos_escrituracion = [
+        'Ahorro Prog',
+        'C:CreditoTer',
+        'Subsidio'
+    ];
+    let cuotas = {
+        ingresos: 0,
+        concepto: ''
+    };
+    let escrituracion = {
+        ingresos: 0,
+        concepto: '',
+        entidad: ''
+    };
+    let subsidio = {
+        ingresos: 0,
+        concepto: '',
+        entidad: ''
+    };
+    let credito = {
+        ingresos: 0,
+        concepto: '',
+        entidad: ''
+    };
+
+    json.proyecto.unidad.financiaci_n.plan_de_pagos.forEach(cuota => {
+        if (conceptos_cuota_inicial.indexOf(cuota.concepto) != -1) {
+            cuotas.ingresos += cuota.valor;
+        } else if (conceptos_escrituracion.indexOf(cuota.concepto) != -1) {
+            if (conceptos_escrituracion.indexOf(cuota.concepto) == 1) {
+                credito.ingresos += cuota.valor;
+                credito.concepto = 'Crédito hipotecario';
+                credito.entidad = cuota.entidad;
+            } else if (conceptos_escrituracion.indexOf(cuota.concepto) == 2) {
+                subsidio.ingresos += cuota.valor;
+                subsidio.concepto = cuota.concepto;
+                subsidio.entidad = cuota.entidad;
+            } else {
+                escrituracion.ingresos += cuota.valor;
+                escrituracion.concepto = cuota.concepto;
+                escrituracion.entidad = cuota.entidad;
+            }
+        }
+    });
+
+    let conceptos = [
+        escrituracion,
+        subsidio,
+        credito
+    ];
+    conceptos.sort(function (a, b) {
+        return b.ingresos - a.ingresos;
+    });
+    let saldos = [];
+    conceptos.forEach(element => {
+        saldos.push({
+            concepto: element.concepto,
+            valor: element.ingresos,
+            entidad: element.entidad
+        });
+    });
+
+    saldos.push({
+        concepto: 'Cuota Inicial',
+        valor: cuotas.ingresos,
+        entidad: ''
+    });
+
+    return saldos;
+`);
+
+*/
 //let json_cliente = require('./autorizacion_centrales.json');
 
 function azureFunc() {
