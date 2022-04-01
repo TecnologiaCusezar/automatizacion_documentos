@@ -114,16 +114,7 @@ json.proyecto.unidad.financiaci_n.plan_de_pagos.forEach(element => {
 
 function azure() {
 
-    let json = JSON.parse('');
-    let ingresos_total_mensual = 0;
-
-    json.compradores.forEach(comprador => {
-        comprador.informacion_financiera.ingresos.forEach(ingreso => {
-            ingresos_total_mensual += ingreso.total;
-        });
-    });
-
-    return ingresos_total_mensual;
+    let json = JSON.parse(''); let ingresos_total_mensual = 0; json.compradores.forEach(comprador => { comprador.informacion_financiera.ingresos.forEach(ingreso => { ingresos_total_mensual += ingreso.total; }); }); return ingresos_total_mensual;
 
 
 

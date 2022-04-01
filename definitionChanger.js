@@ -51,7 +51,7 @@ Object.keys(fileSchema.properties).forEach((tagName) => {
 
         Object.keys(dynamicSchema).forEach(keyName => {
             if (keyName == tag['x-ms-property-name-alias']) {
-                dynamicSchema[keyName] = `@if(or(equals(${populator.getByTrace(cliente,`proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>concepto>0`)},'Subsidio'),equals(${populator.getByTrace(cliente, `proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>concepto>0`)},'Ahorro Prog'),equals(${populator.getByTrace(cliente, `proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>concepto>0`)},'C:CreditoTer')),'',${(concept == 'concepto') ? 'concat(' : ''}${populator.getByTrace(cliente, `proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>${concept}${(complement == null) ? '' : ('>' + complement)}`)}${(concept == 'concepto') ? (',\' \',' + populator.getByTrace(cliente, `proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>periodo>0`) + ')') : ''})`;
+                dynamicSchema[keyName] = `@if(or(equals(${populator.getByTrace(cliente,`proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>concepto>0`)},'Subsidio'),equals(${populator.getByTrace(cliente, `proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>concepto>0`)},'Ahorro Prog'),equals(${populator.getByTrace(cliente, `proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>concepto>0`)},'C:CreditoTer')),'',${(concept == 'concepto') ? 'concat(' : ''}${populator.getByTrace(cliente, `proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>${concept}${(complement == null) ? '' : ('>' + complement)}`)}${(concept == 'concepto') ? (',\' \',' + populator.getByTrace(cliente, `proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>periodo>0`) + ')') : ''}))`;
             }
         });
     }
