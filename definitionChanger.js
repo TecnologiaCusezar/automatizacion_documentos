@@ -1,4 +1,5 @@
 import fs from 'fs';
+import { isNullOrUndefined } from 'util';
 import JsonDocPopulator from './jsondocpopulatorfx.js';
 
 let fileSchema = JSON.parse(fs.readFileSync("./dynamicFileSchema.json"));
@@ -51,7 +52,7 @@ Object.keys(fileSchema.properties).forEach((tagName) => {
 
         Object.keys(dynamicSchema).forEach(keyName => {
             if (keyName == tag['x-ms-property-name-alias']) {
-                dynamicSchema[keyName] = `@if(or(equals(${populator.getByTrace(cliente,`proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>concepto>0`)},'Subsidio'),equals(${populator.getByTrace(cliente, `proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>concepto>0`)},'Ahorro Prog'),equals(${populator.getByTrace(cliente, `proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>concepto>0`)},'C:CreditoTer')),'',${(concept == 'concepto') ? 'concat(' : ''}${populator.getByTrace(cliente, `proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>${concept}${(complement == null) ? '' : ('>' + complement)}`)}${(concept == 'concepto') ? (',\' \',' + populator.getByTrace(cliente, `proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>periodo>0`) + ')') : ''}))`;
+                dynamicSchema[keyName] = `@if(or(equals(${populator.getByTrace(cliente, `proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>concepto>0`)},'Subsidio'),equals(${populator.getByTrace(cliente, `proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>concepto>0`)},'Ahorro Prog'),equals(${populator.getByTrace(cliente, `proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>concepto>0`)},'C:CreditoTer')),'',${(concept == 'concepto') ? 'concat(' : ''}${populator.getByTrace(cliente, `proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>${concept}${(complement == null) ? '' : ('>' + complement)}`)}${(concept == 'concepto') ? (',\' \',' + ((populator.getByTrace(cliente, `proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>periodo>default`) === undefined || populator.getByTrace(cliente, `proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>periodo>default`) === null) ? populator.getByTrace(cliente, `proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>periodo>0`) : populator.getByTrace(cliente, `proyecto>unidad>financiaci_n>plan_de_pagos>${number - 1}>periodo>default`)) + ')') : ''})`;
             }
         });
     }
@@ -120,3 +121,5 @@ nuevo_json += '}';
 console.log(fileSchema_.properties.definition.actions.Populate_a_Microsoft_Word_template_2.inputs.parameters);
 //C:\Users\jroa\Downloads\boletin-default_20220328161836\Microsoft.Flow\flows\342ca1a0-37d8-46f3-b74a-7ca430e1a588\definition.json
 fs.writeFileSync('C:/Users/jroa/Downloads/boletin-default_20220328161836/Microsoft.Flow/flows/342ca1a0-37d8-46f3-b74a-7ca430e1a588/definition.json', JSON.stringify(fileSchema_));
+
+// console.log(populator.getByTrace(cliente, `proyecto>unidad>financiaci_n>plan_de_pagos>2>periodo>default`));
