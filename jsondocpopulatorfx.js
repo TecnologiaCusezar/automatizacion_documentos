@@ -43,9 +43,9 @@ export default class JsonDocPopulator {
                             let newPath = `${tempPath}?['${key}']`;
                             object[key] = {
                                 default: `${f_q}${newPath}${b_q}`,
-                                día: `${f_q}if(equals(${newPath},null),' ',if(lessOrEquals(length(${newPath}),10),'',formatDateTime(${newPath},'dd')))${b_q}`,
-                                mes: `${f_q}if(equals(${newPath},null),' ',if(lessOrEquals(length(${newPath}),10),'',formatDateTime(${newPath},'MM')))${b_q}`,
-                                año: `${f_q}if(equals(${newPath},null),' ',if(lessOrEquals(length(${newPath}),10),'',formatDateTime(${newPath},'yyyy')))${b_q}`
+                                día: `${f_q}if(equals(${newPath},null),' ',if(less(length(${newPath}),10),'',formatDateTime(${newPath},'dd')))${b_q}`,
+                                mes: `${f_q}if(equals(${newPath},null),' ',if(less(length(${newPath}),10),'',formatDateTime(${newPath},'MM')))${b_q}`,
+                                año: `${f_q}if(equals(${newPath},null),' ',if(less(length(${newPath}),10),'',formatDateTime(${newPath},'yyyy')))${b_q}`
                             };
                         } else if (typeof value === 'string') {
                             let newPath = `${tempPath}?['${key}']`;

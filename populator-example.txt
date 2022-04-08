@@ -1,0 +1,28 @@
+
+
+
+https://cusezar--c.visualforce.com/apex/AgrupacionPDF?pId=0Q04W000003hGYc&tour=&isdtp=p1&sfdcIFrameOrigin=https://cusezar.lightning.force.com&sfdcIFrameHost=web&nonce=d90be4ad1524d27bc2933348b3a807f4f2ef817cf5b6db56d962449393ad5276&ltn_app_id=06m4W0000007eMfQAI&clc=0
+
+https://cusezar--c.visualforce.com/apex/AgrupacionPDF?pId=0Q04W000003hGYcSAM&tour=&isdtp=p1&sfdcIFrameOrigin=https://cusezar.lightning.force.com&sfdcIFrameHost=web&nonce=d90be4ad1524d27bc2933348b3a807f4f2ef817cf5b6db56d962449393ad5276&ltn_app_id=06m4W0000007eMfQAI&clc=0
+
+0Q04W000003hGYcSAM
+
+
+0Q04W000003i9auSAA
+
+
+@{if(equals(items('Apply_to_each')?['informacion_financiera']?['ingresos']?[0]?['total'],null),' ',formatNumber(int(items('Apply_to_each')?['informacion_financiera']?['ingresos']?[0]?['total']),'C2'))}
+
+@{if(equals(items('Apply_to_each')?['informacion_financiera']?['gastos_personales'],null),' ',formatNumber(int(items('Apply_to_each')?['informacion_financiera']?['gastos_personales']),'C2'))}
+
+@{if(equals(items('Apply_to_each')?['informacion_financiera']?['activo'],null),' ',formatNumber(int(items('Apply_to_each')?['informacion_financiera']?['activo']),'C2'))}
+
+@{if(equals(items('Apply_to_each')?['informacion_financiera']?['pasivo'],null),' ',formatNumber(int(items('Apply_to_each')?['informacion_financiera']?['pasivo']),'C2'))}
+
+
+@{if(less(sub(int(items('Apply_to_each')?['informacion_financiera']?['activo']),int(items('Apply_to_each')?['informacion_financiera']?['pasivo'])),0),'$ 0',formatNumber(int(sub(int(items('Apply_to_each')?['informacion_financiera']?['activo']),int(items('Apply_to_each')?['informacion_financiera']?['pasivo']))),'C2'))}
+
+
+@{}
+
+@{if(equals(items('Apply_to_each')?['informacion_financiera']?['ingresos']?[1]?['total'],null),' ',formatNumber(int(items('Apply_to_each')?['informacion_financiera']?['ingresos']?[1]?['total']),'C2'))}

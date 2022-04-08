@@ -1,6 +1,8 @@
 {
     "proyecto": {
         "macroproyecto": "GREGAL",
+        "sociedad_vendedora":"CUSEZAR S.A.",
+        
         "equipo_comercial": [
             {
                 "nombre": "Adriana Restrepo",
@@ -26,6 +28,7 @@
         "tel_fono": "6516066",
         "unidad": {
             "id": "APT-002-0501",
+            "obra":"72",
             "torre": "002",
             "unidad": "0501",
             "area": {
@@ -362,34 +365,19 @@
             "garajes": [
                 {
                     "c_digo": "13",
-                    "descripci_n": "En Sótano",
+                    "descripci_n": "Cubierto",
                     "valor": 20000000
                 },
                 {
                     "c_digo": "13",
-                    "descripci_n": "En Sótano",
+                    "descripci_n": "Cubierto",
                     "valor": 20000000
-                },
-                {
-                    "c_digo": "",
-                    "descripci_n": "",
-                    "valor": 0
-                },
-                {
-                    "c_digo": "",
-                    "descripci_n": "",
-                    "valor": 0
-                },
-                {
-                    "c_digo": "",
-                    "descripci_n": "",
-                    "valor": 0
                 }
             ],
             "dep_sitos": [
                 {
-                    "c_digo": "",
-                    "descripci_n": "",
+                    "c_digo": "10",
+                    "descripci_n": "En sótano",
                     "piso": ""
                 },
                 {
@@ -401,18 +389,18 @@
             "mes_estimado_entrega": "",
             "torre_hace_parte_cerramiento": true,
             "exterior": false,
-            "interior": false,
-            "medianero": false,
+            "interior": true,
+            "medianero": true,
             "esquinero": false,
-            "observaciones": ""
+            "observaciones": "El comprador conoce el apto"
         },
         "coeficiente_administraci_n": 3200,
         "email": "gregal@cusezar.com",
         "direcci_n": "Cra. 68D #21-35",
         "ciudad": "Bogota D.C.",
-        "nombre_asesor": "",
-        "identificaci_n_asesor": "",
-        "cargo_asesor": ""
+        "nombre_asesor": "Juan pablo Roa",
+        "identificaci_n_asesor": "1000617084",
+        "cargo_asesor": "Promotor"
     },
     "compradores": [
         {
@@ -425,7 +413,7 @@
             "lugar_expedici_n": "BUCARAMANGA",
             "fecha_nacimiento": "1980-08-19",
             "lugar_nacimiento": "BOGOTÁ D.C.",
-            "nacionalidad": "",
+            "nacionalidad": "Colombiano",
             "estado_civil": "UL",
             "sexo": "",
             "c_nyugue": {

@@ -1,0 +1,646 @@
+{
+    "proyecto": {
+        "macroproyecto": "GREGAL",
+        "sociedad_vendedora": "Cusezar S.A.",
+        "equipo_comercial": [
+            {
+                "nombre": "Adriana Restrepo",
+                "cargo": "jefe"
+            },
+            {
+                "nombre": "Nicolás Santos",
+                "cargo": "asesor"
+            },
+            {
+                "nombre": "Juan Roa",
+                "cargo": "promotor"
+            },
+            {
+                "nombre": "",
+                "cargo": "promotor"
+            },
+            {
+                "nombre": "",
+                "cargo": "promotor"
+            }
+        ],
+        "tel_fono": "75897",
+        "unidad": {
+            "id": "APT-01-1508",
+            "torre": "01",
+            "unidad": "1508",
+            "area": {
+                "construidos": 64.55,
+                "privados": 56.8,
+                "balc_n": 56.8,
+                "terraza": 0,
+                "patio": 0
+            },
+            "financiaci_n": {
+                "valor": 452400000,
+                "plan_de_pagos": [
+                    {
+                        "concepto": "Separación",
+                        "fecha": "2021-08-18",
+                        "valor": 8000000,
+                        "periodo": "0",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2021-09-27",
+                        "valor": 4000000,
+                        "periodo": "1",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2021-10-25",
+                        "valor": 4000000,
+                        "periodo": "2",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2021-11-25",
+                        "valor": 4000000,
+                        "periodo": "3",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2021-12-27",
+                        "valor": 4000000,
+                        "periodo": "4",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2022-01-25",
+                        "valor": 4000000,
+                        "periodo": "5",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2022-02-25",
+                        "valor": 50000000,
+                        "periodo": "6",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2022-03-25",
+                        "valor": 4000000,
+                        "periodo": "7",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2022-04-25",
+                        "valor": 4000000,
+                        "periodo": "8",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2022-05-25",
+                        "valor": 4000000,
+                        "periodo": "9",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2022-06-27",
+                        "valor": 4000000,
+                        "periodo": "10",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2022-07-25",
+                        "valor": 4000000,
+                        "periodo": "11",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2022-08-25",
+                        "valor": 4000000,
+                        "periodo": "12",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2022-09-26",
+                        "valor": 4000000,
+                        "periodo": "13",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2022-10-25",
+                        "valor": 4000000,
+                        "periodo": "14",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2022-11-25",
+                        "valor": 4000000,
+                        "periodo": "15",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2022-12-26",
+                        "valor": 4000000,
+                        "periodo": "16",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2023-01-25",
+                        "valor": 4000000,
+                        "periodo": "17",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2023-02-27",
+                        "valor": 4000000,
+                        "periodo": "18",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2023-03-27",
+                        "valor": 4000000,
+                        "periodo": "19",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2023-04-25",
+                        "valor": 4000000,
+                        "periodo": "20",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2023-05-25",
+                        "valor": 4000000,
+                        "periodo": "21",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2023-06-26",
+                        "valor": 4000000,
+                        "periodo": "22",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2023-07-25",
+                        "valor": 4000000,
+                        "periodo": "23",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2023-08-25",
+                        "valor": 4000000,
+                        "periodo": "24",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2023-09-25",
+                        "valor": 4000000,
+                        "periodo": "25",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2023-10-25",
+                        "valor": 4000000,
+                        "periodo": "26",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2023-11-27",
+                        "valor": 4000000,
+                        "periodo": "27",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2023-12-25",
+                        "valor": 4000000,
+                        "periodo": "28",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2024-01-25",
+                        "valor": 4000000,
+                        "periodo": "29",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2024-02-26",
+                        "valor": 4000000,
+                        "periodo": "30",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2024-03-25",
+                        "valor": 4000000,
+                        "periodo": "31",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2024-04-25",
+                        "valor": 4000000,
+                        "periodo": "32",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2024-05-27",
+                        "valor": 4000000,
+                        "periodo": "33",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2024-06-25",
+                        "valor": 4000000,
+                        "periodo": "34",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2024-07-25",
+                        "valor": 4000000,
+                        "periodo": "35",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2024-08-26",
+                        "valor": 4000000,
+                        "periodo": "36",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Cuota",
+                        "fecha": "2024-09-25",
+                        "valor": 4000000,
+                        "periodo": "37",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "Ultimo Pago",
+                        "fecha": "2024-10-25",
+                        "valor": 78630000,
+                        "periodo": "38",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    },
+                    {
+                        "concepto": "C:CreditoTer",
+                        "fecha": "2024-11-25",
+                        "valor": 347200000,
+                        "periodo": "39",
+                        "entidad": "",
+                        "amortizaci_n": "",
+                        "plazo": 0
+                    }
+                ],
+                "plazo": 23,
+                "descuento_comercial": 0,
+                "descuento_financiero": 0,
+                "costo_financiero": 0
+            },
+            "garajes": [
+                {
+                    "c_digo": "23",
+                    "descripci_n": "Descubierto",
+                    "tipo": "Doble"
+                },
+                {
+                    "c_digo": "",
+                    "descripci_n": "",
+                    "tipo": ""
+                },
+                {
+                    "c_digo": "",
+                    "descripci_n": "",
+                    "tipo": ""
+                },
+                {
+                    "c_digo": "",
+                    "descripci_n": "",
+                    "tipo": ""
+                },
+                {
+                    "c_digo": "",
+                    "descripci_n": "",
+                    "tipo": ""
+                }
+            ],
+            "dep_sitos": [
+                {
+                    "c_digo": "251",
+                    "descripci_n": "En sótano",
+                    "piso": ""
+                },
+                {
+                    "c_digo": "",
+                    "descripci_n": "En sótano",
+                    "piso": ""
+                }
+            ],
+            "mes_estimado_entrega": "",
+            "torre_hace_parte_cerramiento": true,
+            "exterior": false,
+            "interior": false,
+            "medianero": false,
+            "esquinero": true,
+            "observaciones": "",
+            "obra": "72"
+        },
+        "coeficiente_administraci_n": 3200,
+        "email": "gregal@cusezar.com",
+        "direcci_n": "Av Calle jimenez",
+        "ciudad": "Bogotá",
+        "nombre_asesor": "Juan pablo",
+        "identificaci_n_asesor": "1000617084",
+        "cargo_asesor": "promotor"
+    },
+    "compradores": [
+        {
+            "nombre": "ANDRES",
+            "primer_apellido": "SILVA",
+            "segundo_apellido": "DEL",
+            "tipo_documento": "Cédula de ciudadanía",
+            "n_mero_documento": "1013616224",
+            "fecha_expedici_n": "",
+            "lugar_expedici_n": "BOGOTÁ D.C.",
+            "fecha_nacimiento": "1990-10-18",
+            "lugar_nacimiento": "",
+            "nacionalidad": "",
+            "estado_civil": "SO",
+            "sexo": "",
+            "c_nyugue": {
+                "nombres": " ",
+                "apellidos": " ",
+                "n_mero_documento": "",
+                "a_os_de_convivencia": "",
+                "fecha_de_liquidaci_n_de_sociedad": "",
+                "n_mero_de_notar_a_o_juzgado": "",
+                "n_mero_de_escritura": ""
+            },
+            "correo_electr_nico": "asilvadelcastillo@gmail.com",
+            "n_mero_de_celular": "3124185220",
+            "n_mero_de_tel_fono": "",
+            "direcci_n_de_residencia": "CARRERA 38B NO. 2 -49",
+            "ciudad_de_residencia": "BOGOTÁ D.C.",
+            "pa_s_de_residencia": "COLOMBIA",
+            "informacion_financiera": {
+                "ingresos": [
+                    {
+                        "actividad": "Independiente",
+                        "c_digo_ciiu": "",
+                        "ocupaci_n": "",
+                        "cargo": "",
+                        "total": 5816800,
+                        "empresa": {
+                            "nombre": "MINISTERIO DE CULTURA",
+                            "tel_fono": "3424100 EXT 1626",
+                            "direcci_n": "",
+                            "telefono": ""
+                        },
+                        "_p_que_tipo_de_producto_y_o_servicio_comercializa": "",
+                        "cesantias": "",
+                        "entidad": ""
+                    },
+                    {
+                        "actividad": "",
+                        "c_digo_ciiu": "",
+                        "ocupaci_n": "",
+                        "cargo": "",
+                        "total": 0,
+                        "empresa": {
+                            "nombre": "",
+                            "tel_fono": "",
+                            "direcci_n": ""
+                        },
+                        "_p_que_tipo_de_producto_y_o_servicio_comercializa": "",
+                        "cesantias": "",
+                        "entidad": ""
+                    }
+                ],
+                "cifin": 2656000,
+                "aporte_por_primas": 0,
+                "ahorros": 0,
+                "gastos_personales": 500000,
+                "aportes": "",
+                "subsidio": {
+                    "entidad": "",
+                    "valor": 0
+                },
+                "activo": 0,
+                "pasivo": 0
+            },
+            "informacion_pep": {
+                "_p_por_su_actividad_o_cargo_maneja_recursos p_blicos": false,
+                "_p_por_su_actividad_u_oficio_goza_usted_de_reconocimiento_p_blico_general": false,
+                "_p_por_su_actividad_o_cargo_ejerce_alg_n_grado_de_poder_p_blico": "",
+                "_p_existe_alg_n_v_nculo_entre_usted_y_una_persona_considerada_p_blicamente_expuesta": "",
+                "_p_es_usted_sujeto_de_obligaciones_tributarias_en_otros_pa_ses_o_grupo_de_pa_ses": "",
+                "nombre_gerente_comercial": "",
+                "n_mero_documento_gerente_comercial": "",
+                "nombre_oficial_cumplimiento": "",
+                "n_mero_documento_oficial_cumplimiento": "",
+                "_p_por_su_actividad_o_cargo_maneja_recursos_p_blicos": false
+            },
+            "origen_de_fondos": "De mi actividad como Independiente",
+            "acepta_campa_as_de_promoci_n_de_proyectos": true,
+            "acepta_estudios_estad_sticos_del_cliente": true
+        },
+        {
+            "nombre": "ERIKA YORLEY",
+            "primer_apellido": "BUSTOS",
+            "segundo_apellido": "RUIZ",
+            "tipo_documento": "Cédula de ciudadanía",
+            "n_mero_documento": "1018485016",
+            "fecha_expedici_n": "",
+            "lugar_expedici_n": "BOGOTÁ D.C",
+            "fecha_nacimiento": "1996-03-20",
+            "lugar_nacimiento": "",
+            "nacionalidad": "",
+            "estado_civil": "SO",
+            "sexo": "",
+            "c_nyugue": {
+                "nombres": "",
+                "apellidos": "",
+                "n_mero_documento": "",
+                "a_os_de_convivencia": "",
+                "fecha_de_liquidaci_n_de_sociedad": "",
+                "n_mero_de_notar_a_o_juzgado": "",
+                "n_mero_de_escritura": ""
+            },
+            "correo_electr_nico": "erikabustosruiz@gmail.com",
+            "n_mero_de_celular": "3202612337",
+            "n_mero_de_tel_fono": "",
+            "direcci_n_de_residencia": "CARRERA 38B NO. 2 -49",
+            "ciudad_de_residencia": "BOGOTÁ D.C.",
+            "pa_s_de_residencia": "COLOMBIA",
+            "informacion_financiera": {
+                "ingresos": [
+                    {
+                        "actividad": "Independiente",
+                        "c_digo_ciiu": "",
+                        "ocupaci_n": "",
+                        "cargo": "",
+                        "total": 5448000,
+                        "empresa": {
+                            "nombre": "",
+                            "tel_fono": "",
+                            "direcci_n": "",
+                            "telefono": ""
+                        },
+                        "_p_que_tipo_de_producto_y_o_servicio_comercializa": "",
+                        "cesantias": "",
+                        "entidad": ""
+                    },
+                    {
+                        "actividad": "",
+                        "c_digo_ciiu": "",
+                        "ocupaci_n": "",
+                        "cargo": "",
+                        "total": 0,
+                        "empresa": {
+                            "nombre": "",
+                            "tel_fono": "",
+                            "direcci_n": ""
+                        },
+                        "_p_que_tipo_de_producto_y_o_servicio_comercializa": "",
+                        "cesantias": "",
+                        "entidad": ""
+                    }
+                ],
+                "cifin": 1801000,
+                "aporte_por_primas": 0,
+                "ahorros": 0,
+                "gastos_personales": 500000,
+                "aportes": "",
+                "subsidio": {
+                    "entidad": "",
+                    "valor": 0
+                },
+                "activo": 0,
+                "pasivo": 0
+            },
+            "informacion_pep": {
+                "_p_por_su_actividad_o_cargo_maneja_recursos p_blicos": false,
+                "_p_por_su_actividad_u_oficio_goza_usted_de_reconocimiento_p_blico_general": false,
+                "_p_por_su_actividad_o_cargo_ejerce_alg_n_grado_de_poder_p_blico": "",
+                "_p_existe_alg_n_v_nculo_entre_usted_y_una_persona_considerada_p_blicamente_expuesta": "",
+                "_p_es_usted_sujeto_de_obligaciones_tributarias_en_otros_pa_ses_o_grupo_de_pa_ses": "",
+                "nombre_gerente_comercial": "",
+                "n_mero_documento_gerente_comercial": "",
+                "nombre_oficial_cumplimiento": "",
+                "n_mero_documento_oficial_cumplimiento": "",
+                "_p_por_su_actividad_o_cargo_maneja_recursos_p_blicos": false
+            },
+            "origen_de_fondos": "De mi actividad como Independiente",
+            "acepta_campa_as_de_promoci_n_de_proyectos": true,
+            "acepta_estudios_estad_sticos_del_cliente": true
+        }
+    ]
+}

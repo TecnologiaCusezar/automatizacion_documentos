@@ -3,8 +3,9 @@ import { isNullOrUndefined } from 'util';
 import JsonDocPopulator from './jsondocpopulatorfx.js';
 
 let fileSchema = JSON.parse(fs.readFileSync("./dynamicFileSchema.json"));
-let fileSchema_ = JSON.parse(fs.readFileSync("C:/Users/jroa/Downloads/boletin-default_20220328161836/definition.json"));
-let json = JSON.parse(fs.readFileSync("./boletin_ventas.json"));
+//C:\Users\jroa\Downloads\Boletin_20220405174414 (1)\manifest.json
+let fileSchema_ = JSON.parse(fs.readFileSync('C:/Users/jroa/Downloads/Boletin_20220405174414 (1)/Microsoft.Flow/flows/a2b8ff66-f69e-4b8c-92a0-c387a14005f1/definition.json'));
+let json = JSON.parse(fs.readFileSync("./example.json"));
 json.proyecto.unidad.financiaci_n.plazo = 50;
 
 for (let i = 35; i < 50; i++) {
@@ -25,7 +26,8 @@ json.proyecto.unidad.financiaci_n.plan_de_pagos.forEach(element => {
     }
 });
 let populator = new JsonDocPopulator();
-let cliente = populator.getAttributes("triggerBody()", json);
+fs.writeFileSync('./schema_structure.json', JSON.stringify(populator.getAttributes('triggerBody()', json)));
+let cliente = JSON.parse(fs.readFileSync('./schema_structure.json'));
 let nuevo_json = '{';
 let dynamicSchema = fileSchema_.properties.definition.actions.Populate_a_Microsoft_Word_template_2.inputs.parameters;
 //console.log(fileSchema.properties);
@@ -33,6 +35,9 @@ Object.keys(fileSchema.properties).forEach((tagName) => {
 
     let tag = fileSchema.properties[tagName];
     let title = tag['title'];
+
+
+    /*
     if (title.includes(': Plan de pagos')) {
         let number = Number.parseInt(title.split(' ')[0].replace(')'));
         let concept = title.split(' ')[1].toLowerCase();
@@ -56,6 +61,105 @@ Object.keys(fileSchema.properties).forEach((tagName) => {
             }
         });
     }
+    */
+    if (title.includes('Garaje ')) {
+        let number = Number.parseInt(title.split(' ')[0].replace(')'));
+        let concept = title.split(' ')[2].toLowerCase();
+        let detalles = [
+            'Descubierto',
+            'Cubierto',
+            'Semi-descubierto'
+        ];
+        let tipos = [
+            'Doble',
+            'Sencillo',
+            'Servidumbre'
+        ];
+        if (concept == 'no') {
+            Object.keys(dynamicSchema).forEach(keyName => {
+                if (keyName == tag['x-ms-property-name-alias']) {
+                    dynamicSchema[keyName] = `@if(equals(triggerBody()?['proyecto']?['unidad']?['garajes']?[${number - 1}]?['c_digo'],''),'X','')`;
+                }
+            });
+        } else if (concept == 'garaje') {
+            Object.keys(dynamicSchema).forEach(keyName => {
+                if (keyName == tag['x-ms-property-name-alias']) {
+                    dynamicSchema[keyName] = `@triggerBody()?['proyecto']?['unidad']?['garajes']?[${number - 1}]?['c_digo']`;
+                }
+            });
+        }
+        detalles.forEach(detalle => {
+            if (concept == detalle.toLowerCase()) {
+                Object.keys(dynamicSchema).forEach(keyName => {
+                    if (keyName == tag['x-ms-property-name-alias']) {
+                        dynamicSchema[keyName] = `@if(equals(triggerBody()?['proyecto']?['unidad']?['garajes']?[${number - 1}]?['c_digo'],''),'',if(equals(${populator.getByTrace(cliente, `proyecto>unidad>garajes>${number - 1}>descripci_n>0`)},'${concept[0].toUpperCase() + concept.slice(1)}'),'X',''))`;
+                    }
+                });
+            }
+        });
+        tipos.forEach(detalle => {
+            if (concept == detalle.toLowerCase()) {
+                Object.keys(dynamicSchema).forEach(keyName => {
+                    if (keyName == tag['x-ms-property-name-alias']) {
+                        dynamicSchema[keyName] = `@if(equals(triggerBody()?['proyecto']?['unidad']?['garajes']?[${number - 1}]?['c_digo'],''),'',if(equals(${populator.getByTrace(cliente, `proyecto>unidad>garajes>${number - 1}>tipo>0`)},'${concept[0].toUpperCase() + concept.slice(1)}'),'X',''))`;
+                    }
+                });
+            }
+        });
+
+
+    }
+
+    if (title.includes('epósito')) {
+
+        let number = Number.parseInt(title.split(' ')[0].replace(')'));
+        
+        let descripcion = [
+            'cubierta',
+            'sótano'
+        ];
+
+        if (title.includes('aplica')) {
+            Object.keys(dynamicSchema).forEach(keyName => {
+                if (keyName == tag['x-ms-property-name-alias']) {
+                    dynamicSchema[keyName] = `@if(equals(triggerBody()?['proyecto']?['unidad']?['dep_sitos']?[${number - 1}]?['c_digo'],''),'X','')`;
+                }
+            });
+        } else if (title.includes('Código')) {
+            Object.keys(dynamicSchema).forEach(keyName => {
+                if (keyName == tag['x-ms-property-name-alias']) {
+                    dynamicSchema[keyName] = `@triggerBody()?['proyecto']?['unidad']?['dep_sitos']?[${number - 1}]?['c_digo']`;
+                }
+            });
+        } else if (title.includes('Número')) {
+            Object.keys(dynamicSchema).forEach(keyName => {
+                if (keyName == tag['x-ms-property-name-alias']) {
+                    dynamicSchema[keyName] = `@triggerBody()?['proyecto']?['unidad']?['dep_sitos']?[${number - 1}]?['piso']`;
+                }
+            });
+        } else {
+            let concept = title.split(' ')[3].toLowerCase();
+            descripcion.forEach(detalle => {
+                if (concept == detalle.toLowerCase()) {
+                    Object.keys(dynamicSchema).forEach(keyName => {
+                        if (keyName == tag['x-ms-property-name-alias']) {
+                            dynamicSchema[keyName] = `@if(equals(triggerBody()?['proyecto']?['unidad']?['dep_sitos']?[${number - 1}]?['c_digo'],''),'',if(equals(${populator.getByTrace(cliente, `proyecto>unidad>dep_sitos>${number - 1}>descripci_n>0`)},'${'En ' + concept}'),'X',''))`;
+                        }
+                    });
+                }
+            });
+        }
+    }
+    /*
+        if (title.includes(') Entidad: Actividad Económica')) {
+            let number = Number.parseInt(title.split(' ')[0].replace(')'));
+            Object.keys(dynamicSchema).forEach(keyName => {
+                if (keyName == tag['x-ms-property-name-alias']) {
+                    dynamicSchema[keyName] = `@triggerBody()?['compradores']?[${number - 1}]?['informacion_financiera']?['ingresos']?[0]?['empresa']?['nombre']`;
+                }
+            });
+        }
+        */
     /*
     if (title.includes('Opción-')) {
         let opciones_ingreso = [
@@ -118,7 +222,7 @@ Object.keys(fileSchema.properties).forEach((tagName) => {
     }*/
 });
 nuevo_json += '}';
-console.log(fileSchema_.properties.definition.actions.Populate_a_Microsoft_Word_template_2.inputs.parameters);
+// console.log(fileSchema_.properties.definition.actions.Populate_a_Microsoft_Word_template_2.inputs.parameters);
 //C:\Users\jroa\Downloads\boletin-default_20220328161836\Microsoft.Flow\flows\342ca1a0-37d8-46f3-b74a-7ca430e1a588\definition.json
 fs.writeFileSync('C:/Users/jroa/Downloads/boletin-default_20220328161836/Microsoft.Flow/flows/342ca1a0-37d8-46f3-b74a-7ca430e1a588/definition.json', JSON.stringify(fileSchema_));
 
