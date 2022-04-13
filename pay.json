@@ -1,0 +1,164 @@
+{
+    "properties": {
+        "definition": {
+            "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+            "actions": {
+                "Create_record": {
+                    "type": "OpenApiConnection",
+                    "inputs": {
+                        "host": {
+                            "connectionName": "shared_salesforce",
+                            "operationId": "PostItem_V2",
+                            "apiId": "/providers/Microsoft.PowerApps/apis/shared_salesforce"
+                        },
+                        "parameters": {
+                            "table": "Task",
+                            "item/WhoId": "00Q4W00001VnINxUAN",
+                            "item/Subject": "Sala de Ventas - WhatsApp Seguimiento",
+                            "item/ActivityDate": "1985-05-13",
+                            "item/Status": "Completed",
+                            "item/Priority": "Normal",
+                            "item/OwnerId": "0054W00000DRUP7QAP",
+                            "item/Description": "Hola mundo",
+                            "item/IsRecurrence": false,
+                            "item/TaskSubtype": "Call"
+                        },
+                        "authentication": {
+                            "type": "Raw",
+                            "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+                        }
+                    },
+                    "runAfter": {
+                        "Get_records": [
+                            "Succeeded"
+                        ]
+                    },
+                    "metadata": {
+                        "operationMetadataId": "24c7e010-985f-4399-9bde-c5d1b626b425"
+                    }
+                },
+                "Get_records": {
+                    "type": "OpenApiConnection",
+                    "inputs": {
+                        "host": {
+                            "connectionName": "shared_salesforce",
+                            "operationId": "GetItems",
+                            "apiId": "/providers/Microsoft.PowerApps/apis/shared_salesforce"
+                        },
+                        "parameters": {
+                            "table": "Lead"
+                        },
+                        "authentication": {
+                            "type": "Raw",
+                            "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+                        }
+                    },
+                    "runAfter": {},
+                    "metadata": {
+                        "operationMetadataId": "a89384e0-5c6f-4582-b8d2-91bc460afee4"
+                    }
+                },
+                "Add_a_key_column_to_a_table": {
+                    "type": "OpenApiConnection",
+                    "inputs": {
+                        "host": {
+                            "connectionName": "shared_excelonlinebusiness",
+                            "operationId": "CreateIdColumn",
+                            "apiId": "/providers/Microsoft.PowerApps/apis/shared_excelonlinebusiness"
+                        },
+                        "parameters": {
+                            "source": "me",
+                            "drive": "b!UpOiKMSDGUmvsY_1w_5ldwFY5PShS0BGnxDpmh190miLHol84JrPRpzKAwfUehIk",
+                            "file": "/@{triggerBody()['text']}",
+                            "table": "@triggerBody()['text']",
+                            "idColumn": "__PowerAppsId__"
+                        },
+                        "authentication": {
+                            "type": "Raw",
+                            "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+                        }
+                    },
+                    "runAfter": {
+                        "Create_record": [
+                            "Succeeded"
+                        ]
+                    },
+                    "metadata": {
+                        "operationMetadataId": "1f157c70-3475-48b3-8035-c6f60b43687b",
+                        "tableId": "@triggerBody()['text']"
+                    }
+                }
+            },
+            "parameters": {
+                "$connections": {
+                    "defaultValue": {},
+                    "type": "Object"
+                },
+                "$authentication": {
+                    "defaultValue": {},
+                    "type": "SecureObject"
+                }
+            },
+            "triggers": {
+                "manual": {
+                    "type": "Request",
+                    "kind": "Button",
+                    "inputs": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "text": {
+                                    "title": "Input",
+                                    "type": "string",
+                                    "x-ms-dynamically-added": true,
+                                    "description": "Please enter your input",
+                                    "x-ms-content-hint": "TEXT"
+                                }
+                            },
+                            "required": [
+                                "text"
+                            ]
+                        }
+                    },
+                    "metadata": {
+                        "operationMetadataId": "d347eb86-456b-4727-9203-088e24ad1370"
+                    }
+                }
+            },
+            "contentVersion": "1.0.0.0"
+        },
+        "connectionReferences": {
+            "shared_salesforce": {
+                "id": "/providers/Microsoft.PowerApps/apis/shared_salesforce",
+                "connectionName": "69a24bb0017c4a2a86277b79c36c7232",
+                "source": "Invoker"
+            },
+            "shared_excelonlinebusiness": {
+                "id": "/providers/Microsoft.PowerApps/apis/shared_excelonlinebusiness",
+                "connectionName": "shared-excelonlinebu-721a0a29-d0bb-4ab0-86d0-a99b8c3cc05c",
+                "source": "Invoker"
+            }
+        },
+        "parameters": {
+            "$connections": {
+                "value": {
+                    "shared_salesforce": {
+                        "id": "/providers/Microsoft.PowerApps/apis/shared_salesforce",
+                        "connectionName": "69a24bb0017c4a2a86277b79c36c7232",
+                        "source": "Invoker"
+                    },
+                    "shared_excelonlinebusiness": {
+                        "id": "/providers/Microsoft.PowerApps/apis/shared_excelonlinebusiness",
+                        "connectionName": "shared-excelonlinebu-721a0a29-d0bb-4ab0-86d0-a99b8c3cc05c",
+                        "source": "Invoker"
+                    }
+                }
+            }
+        },
+        "displayName": "Prueba Log",
+        "templateName": "",
+        "environment": {
+            "name": "Default-f6a75ba9-e1a4-4885-806b-c9e72a45ffd4"
+        }
+    }
+}

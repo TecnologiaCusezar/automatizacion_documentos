@@ -1,0 +1,427 @@
+{
+    "properties": {
+        "definition": {
+            "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+            "actions": {
+                "Add_a_key_column_to_a_table": {
+                    "type": "OpenApiConnection",
+                    "inputs": {
+                        "host": {
+                            "connectionName": "shared_excelonlinebusiness",
+                            "operationId": "CreateIdColumn",
+                            "apiId": "/providers/Microsoft.PowerApps/apis/shared_excelonlinebusiness"
+                        },
+                        "parameters": {
+                            "source": "me",
+                            "drive": "b!UpOiKMSDGUmvsY_1w_5ldwFY5PShS0BGnxDpmh190miLHol84JrPRpzKAwfUehIk",
+                            "file": "/@{triggerBody()['text']}",
+                            "table": "@triggerBody()['text_1']",
+                            "idColumn": "Estado"
+                        },
+                        "authentication": {
+                            "type": "Raw",
+                            "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+                        }
+                    },
+                    "runAfter": {},
+                    "metadata": {
+                        "operationMetadataId": "9a2e82d6-14b4-44cd-951f-979956047ea6"
+                    }
+                },
+                "List_rows_present_in_a_table": {
+                    "type": "OpenApiConnection",
+                    "inputs": {
+                        "host": {
+                            "connectionName": "shared_excelonlinebusiness",
+                            "operationId": "GetItems",
+                            "apiId": "/providers/Microsoft.PowerApps/apis/shared_excelonlinebusiness"
+                        },
+                        "parameters": {
+                            "source": "me",
+                            "drive": "b!UpOiKMSDGUmvsY_1w_5ldwFY5PShS0BGnxDpmh190miLHol84JrPRpzKAwfUehIk",
+                            "file": "/@{triggerBody()['text']}",
+                            "table": "@triggerBody()['text_1']"
+                        },
+                        "authentication": {
+                            "type": "Raw",
+                            "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+                        }
+                    },
+                    "runAfter": {
+                        "Add_a_key_column_to_a_table": [
+                            "Succeeded"
+                        ]
+                    },
+                    "metadata": {
+                        "operationMetadataId": "7ac999cb-a170-490c-ae02-3b9ed67480c2"
+                    }
+                },
+                "Apply_to_each": {
+                    "type": "Foreach",
+                    "foreach": "@outputs('List_rows_present_in_a_table')?['body/value']",
+                    "actions": {
+                        "Execute_a_SOQL_query": {
+                            "type": "OpenApiConnection",
+                            "inputs": {
+                                "host": {
+                                    "connectionName": "shared_salesforce",
+                                    "operationId": "ExecuteSoqlQuery",
+                                    "apiId": "/providers/Microsoft.PowerApps/apis/shared_salesforce"
+                                },
+                                "parameters": {
+                                    "queryParameters/query": "SELECT Id, Name, FirstName, LastName, Medio__c, Tipo_de_medio__c, Autoriza_envio_de_publicidad__c, Autoriza_el_tratamiento_de_datos__c\nFROM Lead \nWHERE Email = '@email'",
+                                    "queryParameters/parameters": {
+                                        "email": "@{items('Apply_to_each')?[triggerBody()['text_2']]}"
+                                    }
+                                },
+                                "authentication": {
+                                    "type": "Raw",
+                                    "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+                                }
+                            },
+                            "runAfter": {},
+                            "metadata": {
+                                "operationMetadataId": "06a087c2-3271-4a20-9823-14528ac4e00c"
+                            }
+                        },
+                        "Condition": {
+                            "type": "If",
+                            "expression": {
+                                "greater": [
+                                    "@length(outputs('Execute_a_SOQL_query')?['body']?['records'])",
+                                    0
+                                ]
+                            },
+                            "actions": {
+                                "Apply_to_each_2": {
+                                    "type": "Foreach",
+                                    "foreach": "@body('Execute_a_SOQL_query')?['records']",
+                                    "actions": {
+                                        "Create_record": {
+                                            "type": "OpenApiConnection",
+                                            "inputs": {
+                                                "host": {
+                                                    "connectionName": "shared_salesforce",
+                                                    "operationId": "PostItem_V2",
+                                                    "apiId": "/providers/Microsoft.PowerApps/apis/shared_salesforce"
+                                                },
+                                                "parameters": {
+                                                    "table": "Task",
+                                                    "item/WhoId": "@items('Apply_to_each_2')?['Id']",
+                                                    "item/Subject": "Sala de Ventas - WhatsApp Seguimiento",
+                                                    "item/ActivityDate": "@triggerBody()['text_4']",
+                                                    "item/Status": "Completed",
+                                                    "item/Priority": "Normal",
+                                                    "item/OwnerId": "@triggerBody()['text_3']",
+                                                    "item/Description": "@triggerBody()['text_5']",
+                                                    "item/IsRecurrence": false,
+                                                    "item/TaskSubtype": "Call"
+                                                },
+                                                "authentication": {
+                                                    "type": "Raw",
+                                                    "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+                                                }
+                                            },
+                                            "runAfter": {},
+                                            "metadata": {
+                                                "operationMetadataId": "1dfacce2-5598-4ae2-a690-1d06c95c2fe1"
+                                            }
+                                        },
+                                        "Condition_2": {
+                                            "type": "If",
+                                            "expression": {
+                                                "equals": [
+                                                    "@equals(outputs('Create_record')?['body']?['Id'],null)",
+                                                    "@true"
+                                                ]
+                                            },
+                                            "actions": {
+                                                "Update_record_(V3)": {
+                                                    "type": "OpenApiConnection",
+                                                    "inputs": {
+                                                        "host": {
+                                                            "connectionName": "shared_salesforce",
+                                                            "operationId": "PatchItem_V3",
+                                                            "apiId": "/providers/Microsoft.PowerApps/apis/shared_salesforce"
+                                                        },
+                                                        "parameters": {
+                                                            "table": "Lead",
+                                                            "id": "@items('Apply_to_each_2')?['Id']",
+                                                            "item/LastName": "@items('Apply_to_each_2')?['LastName']",
+                                                            "item/Autoriza_el_tratamiento_de_datos__c": "@items('Apply_to_each_2')?['Autoriza_el_tratamiento_de_datos__c']",
+                                                            "item/Autoriza_envio_de_publicidad__c": "@items('Apply_to_each_2')?['Autoriza_envio_de_publicidad__c']",
+                                                            "item/Medio__c": "@items('Apply_to_each_2')?['Medio__c']",
+                                                            "item/Tipo_de_medio__c": "@items('Apply_to_each_2')?['Tipo_de_medio__c']",
+                                                            "item/FirstName": "@items('Apply_to_each_2')?['FirstName']",
+                                                            "item/Status": "@triggerBody()['text_6']"
+                                                        },
+                                                        "authentication": {
+                                                            "type": "Raw",
+                                                            "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+                                                        }
+                                                    },
+                                                    "runAfter": {},
+                                                    "metadata": {
+                                                        "operationMetadataId": "1cc57e1a-3f32-42f2-a946-f1a9ac4c00eb"
+                                                    }
+                                                },
+                                                "Set_variable_3": {
+                                                    "type": "SetVariable",
+                                                    "inputs": {
+                                                        "name": "message",
+                                                        "value": "Completado - Nombre: @{items('Apply_to_each_2')?['Name']}"
+                                                    },
+                                                    "runAfter": {
+                                                        "Update_record_(V3)": [
+                                                            "Succeeded"
+                                                        ]
+                                                    },
+                                                    "metadata": {
+                                                        "operationMetadataId": "5e337e93-20e3-45ba-a35f-8dfccc3b7dd0"
+                                                    }
+                                                }
+                                            },
+                                            "runAfter": {
+                                                "Create_record": [
+                                                    "Succeeded"
+                                                ]
+                                            },
+                                            "else": {
+                                                "actions": {
+                                                    "Set_variable_2": {
+                                                        "type": "SetVariable",
+                                                        "inputs": {
+                                                            "name": "message",
+                                                            "value": "No se creó la tarea en el registro: @{items('Apply_to_each_2')?['Id']}"
+                                                        },
+                                                        "runAfter": {},
+                                                        "metadata": {
+                                                            "operationMetadataId": "5fafd0fa-ca9c-4ac0-a66f-dafc12d3e128"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "metadata": {
+                                                "operationMetadataId": "65b79154-0517-4ddf-9a83-80bd204be97c"
+                                            }
+                                        }
+                                    },
+                                    "runAfter": {},
+                                    "metadata": {
+                                        "operationMetadataId": "445ec974-9fda-4c52-8157-6e3c83348404"
+                                    }
+                                }
+                            },
+                            "runAfter": {
+                                "Execute_a_SOQL_query": [
+                                    "Succeeded"
+                                ]
+                            },
+                            "else": {
+                                "actions": {
+                                    "Set_variable": {
+                                        "type": "SetVariable",
+                                        "inputs": {
+                                            "name": "message",
+                                            "value": "No se encontró el registro: @{items('Apply_to_each')?[triggerBody()['text_2']]}"
+                                        },
+                                        "runAfter": {},
+                                        "metadata": {
+                                            "operationMetadataId": "a216be84-f95b-4909-9739-f3c67ab61ad3"
+                                        }
+                                    }
+                                }
+                            },
+                            "metadata": {
+                                "operationMetadataId": "8533355f-544a-4d92-8fc8-543c84a13b0a"
+                            }
+                        },
+                        "Update_a_row": {
+                            "type": "OpenApiConnection",
+                            "inputs": {
+                                "host": {
+                                    "connectionName": "shared_excelonlinebusiness",
+                                    "operationId": "PatchItem",
+                                    "apiId": "/providers/Microsoft.PowerApps/apis/shared_excelonlinebusiness"
+                                },
+                                "parameters": {
+                                    "source": "me",
+                                    "drive": "b!UpOiKMSDGUmvsY_1w_5ldwFY5PShS0BGnxDpmh190miLHol84JrPRpzKAwfUehIk",
+                                    "file": "/@{triggerBody()['text']}",
+                                    "table": "@triggerBody()['text_1']",
+                                    "idColumn": "@triggerBody()['text_2']",
+                                    "id": "@items('Apply_to_each')?[triggerBody()['text_2']]",
+                                    "item": "@variables('message')"
+                                },
+                                "authentication": {
+                                    "type": "Raw",
+                                    "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+                                }
+                            },
+                            "runAfter": {
+                                "Condition": [
+                                    "Succeeded"
+                                ]
+                            },
+                            "metadata": {
+                                "operationMetadataId": "ce90677f-5ef8-40b5-8bbe-c4f121821a3f"
+                            }
+                        }
+                    },
+                    "runAfter": {
+                        "Initialize_variable": [
+                            "Succeeded"
+                        ]
+                    },
+                    "metadata": {
+                        "operationMetadataId": "b0e04066-8813-4037-a648-60521af6a0d1"
+                    }
+                },
+                "Initialize_variable": {
+                    "type": "InitializeVariable",
+                    "inputs": {
+                        "variables": [
+                            {
+                                "name": "message",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "runAfter": {
+                        "List_rows_present_in_a_table": [
+                            "Succeeded"
+                        ]
+                    },
+                    "metadata": {
+                        "operationMetadataId": "eddf4aac-97f5-4811-9794-56d71fc50103"
+                    }
+                }
+            },
+            "parameters": {
+                "$connections": {
+                    "defaultValue": {},
+                    "type": "Object"
+                },
+                "$authentication": {
+                    "defaultValue": {},
+                    "type": "SecureObject"
+                }
+            },
+            "triggers": {
+                "manual": {
+                    "type": "Request",
+                    "kind": "Button",
+                    "inputs": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "text": {
+                                    "title": "Archivo",
+                                    "type": "string",
+                                    "x-ms-dynamically-added": true,
+                                    "description": "Please enter your input",
+                                    "x-ms-content-hint": "TEXT"
+                                },
+                                "text_1": {
+                                    "title": "Tabla",
+                                    "type": "string",
+                                    "x-ms-dynamically-added": true,
+                                    "description": "Please enter your input",
+                                    "x-ms-content-hint": "TEXT"
+                                },
+                                "text_2": {
+                                    "title": "Columna indice",
+                                    "type": "string",
+                                    "x-ms-dynamically-added": true,
+                                    "description": "Please enter your input",
+                                    "x-ms-content-hint": "TEXT"
+                                },
+                                "text_3": {
+                                    "title": "Asignado a",
+                                    "type": "string",
+                                    "x-ms-dynamically-added": true,
+                                    "description": "Please enter your input",
+                                    "x-ms-content-hint": "TEXT"
+                                },
+                                "text_4": {
+                                    "title": "Fecha",
+                                    "type": "string",
+                                    "x-ms-dynamically-added": true,
+                                    "description": "Please enter your input",
+                                    "x-ms-content-hint": "TEXT"
+                                },
+                                "text_5": {
+                                    "title": "Descripción",
+                                    "type": "string",
+                                    "x-ms-dynamically-added": true,
+                                    "description": "Please enter your input",
+                                    "x-ms-content-hint": "TEXT"
+                                },
+                                "text_6": {
+                                    "title": "Input 6",
+                                    "type": "string",
+                                    "x-ms-dynamically-added": true,
+                                    "description": "Please enter your input",
+                                    "x-ms-content-hint": "TEXT"
+                                },
+                                "text_7": {
+                                    "title": "Motivo",
+                                    "type": "string",
+                                    "x-ms-dynamically-added": true,
+                                    "description": "Please enter your input",
+                                    "enum": [
+                                        "Apto no cumple expectativas"
+                                    ],
+                                    "x-ms-content-hint": "TEXT"
+                                }
+                            },
+                            "required": [
+                                "text",
+                                "text_1",
+                                "text_2",
+                                "text_3",
+                                "text_4",
+                                "text_5",
+                                "text_6",
+                                "text_7"
+                            ]
+                        }
+                    },
+                    "metadata": {
+                        "operationMetadataId": "fe301e2d-0272-4ac2-a313-104a42fbcd2f"
+                    }
+                }
+            },
+            "contentVersion": "1.0.0.0"
+        },
+        "connectionReferences": {
+            "shared_excelonlinebusiness": {
+                "id": "/providers/Microsoft.PowerApps/apis/shared_excelonlinebusiness",
+                "connectionName": "shared-excelonlinebu-721a0a29-d0bb-4ab0-86d0-a99b8c3cc05c"
+            },
+            "shared_salesforce": {
+                "id": "/providers/Microsoft.PowerApps/apis/shared_salesforce",
+                "connectionName": "69a24bb0017c4a2a86277b79c36c7232"
+            }
+        },
+        "parameters": {
+            "$connections": {
+                "value": {
+                    "shared_excelonlinebusiness": {
+                        "id": "/providers/Microsoft.PowerApps/apis/shared_excelonlinebusiness",
+                        "connectionName": "shared-excelonlinebu-721a0a29-d0bb-4ab0-86d0-a99b8c3cc05c"
+                    },
+                    "shared_salesforce": {
+                        "id": "/providers/Microsoft.PowerApps/apis/shared_salesforce",
+                        "connectionName": "69a24bb0017c4a2a86277b79c36c7232"
+                    }
+                }
+            }
+        },
+        "displayName": "Seguimientos Salesforce",
+        "templateName": null,
+        "environment": {
+            "name": "Default-f6a75ba9-e1a4-4885-806b-c9e72a45ffd4"
+        }
+    }
+}
