@@ -2,8 +2,10 @@
   "dependencies": {
     "fast-xml-parser": "^4.0.7",
     "fetch": "^1.1.0",
+    "mssql": "^8.1.0",
     "node-fetch": "^3.2.3",
     "renderjson": "^1.4.0",
+    "tedious": "^14.4.0",
     "url": "^0.11.0",
     "url-parse": "^1.5.10",
     "xhr2": "^0.2.1",

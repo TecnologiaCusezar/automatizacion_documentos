@@ -7,7 +7,7 @@ CREATE TABLE Comercial_Malla_Descansos (
     IdPropietario varchar(15),
     FechaInicio datetime,
     FechaFin datetime,
-    EsVacaciones int
+    EsVacaciones int default 0
 );
 
 CREATE TABLE Comercial_Malla_Proyectos (
